@@ -1,0 +1,18 @@
+# Godot-specific files
+/.import/
+/.export/
+/.cache/
+
+# User-specific editor settings
+.editor_settings-*
+
+# Mono specific (for C# projects)
+.mono/
+/*.csproj
+/*.sln
+/.mono/
+/data_Godot
+
+# Godot's project file backup
+*.cfg~
+*.godot~
