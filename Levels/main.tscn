@@ -1,19 +1,46 @@
-[gd_scene load_steps=5 format=3 uid="uid://d4hjcmvwxni5t"]
+[gd_scene load_steps=7 format=3 uid="uid://d4hjcmvwxni5t"]
 
 [ext_resource type="PackedScene" uid="uid://dv8ga14jrgtfb" path="res://Gameplay/Map/WorldMap.tscn" id="1_dsvs6"]
 [ext_resource type="Script" path="res://Scripts/Core/camera_2d.gd" id="1_qvoxn"]
 [ext_resource type="Script" path="res://Scripts/Core/main.gd" id="1_vq540"]
+[ext_resource type="Texture2D" uid="uid://qs20w4uo3gw" path="res://Art/Map/Floor/MeatTile2.png" id="2_0rqa0"]
+[ext_resource type="PackedScene" uid="uid://cb4udp41rudyd" path="res://Unit/Turret.tscn" id="3_i0156"]
 [ext_resource type="Texture2D" uid="uid://bay8ourwndfe8" path="res://Art/Map/Floor/TileHighlight.png" id="3_vuw60"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_vq540")
 
+[node name="TileMapLayer" parent="." instance=ExtResource("1_dsvs6")]
+
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(577, 326)
 script = ExtResource("1_qvoxn")
 
-[node name="TileMapLayer" parent="." instance=ExtResource("1_dsvs6")]
-tile_map_data = PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+[node name="Castle" type="Node2D" parent="."]
+
+[node name="CastleMeat" type="Sprite2D" parent="Castle"]
+position = Vector2(544, 288)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_0rqa0")
+
+[node name="CastleMeat2" type="Sprite2D" parent="Castle"]
+position = Vector2(608, 288)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_0rqa0")
+
+[node name="CastleMeat3" type="Sprite2D" parent="Castle"]
+position = Vector2(544, 352)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_0rqa0")
+
+[node name="CastleMeat4" type="Sprite2D" parent="Castle"]
+position = Vector2(608, 352)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_0rqa0")
+
+[node name="Turrets" type="Node2D" parent="."]
+
+[node name="Turret" parent="Turrets" instance=ExtResource("3_i0156")]
 
 [node name="TileHighlight" type="Sprite2D" parent="."]
 position = Vector2(190, 320)
