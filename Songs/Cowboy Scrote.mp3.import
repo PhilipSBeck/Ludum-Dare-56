@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bv4a482gw8muh"
+path="res://.godot/imported/Cowboy Scrote.mp3-627a589a7961175f924ee33a8c837f6f.mp3str"
+
+[deps]
+
+source_file="res://Songs/Cowboy Scrote.mp3"
+dest_files=["res://.godot/imported/Cowboy Scrote.mp3-627a589a7961175f924ee33a8c837f6f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

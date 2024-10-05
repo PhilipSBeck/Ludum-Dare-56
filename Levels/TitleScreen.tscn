@@ -40,4 +40,5 @@ position = Vector2(286, 234)
 [node name="Scrote" parent="." instance=ExtResource("5_8dhs3")]
 position = Vector2(805, 437)
 
+[connection signal="quit_button_pressed" from="TitleScreen" to="." method="_on_title_screen_quit_button_pressed"]
 [connection signal="start_button_pressed" from="TitleScreen" to="." method="_on_title_screen_start_button_pressed"]
