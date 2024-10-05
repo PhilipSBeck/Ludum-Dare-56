@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://7tv84aj5tbti"]
+[gd_scene load_steps=4 format=3 uid="uid://c634xgfsl5fmh"]
 
 [ext_resource type="Script" path="res://Scripts/Core/title_screen_hud.gd" id="1_lwn1s"]
 [ext_resource type="FontFile" uid="uid://l348hsha7jl0" path="res://Fonts/PixeloidSansBold-PKnYd.ttf" id="1_um3ig"]
-[ext_resource type="PackedScene" uid="uid://6vty7eyxcx7o" path="res://HUD/MusicPlayerWidget.tscn" id="3_bm1wk"]
+[ext_resource type="PackedScene" path="res://HUD/MusicPlayerWidget.tscn" id="3_bm1wk"]
 
 [node name="TitleScreen" type="CanvasLayer"]
 script = ExtResource("1_lwn1s")
@@ -75,3 +75,4 @@ grow_horizontal = 0
 grow_vertical = 0
 
 [connection signal="pressed" from="Buttons/Start Button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Buttons/Quit Button" to="." method="_on_quit_button_pressed"]
