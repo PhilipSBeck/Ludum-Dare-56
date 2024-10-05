@@ -15,4 +15,7 @@ func _process(delta: float) -> void:
 func _on_title_screen_start_button_pressed() -> void:
 	get_tree().root.add_child(main_scene)
 	get_node("/root/TitleScreen").queue_free()
-	pass # Replace with function body.
+
+
+func _on_title_screen_quit_button_pressed() -> void:
+	get_tree().quit()
