@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://6vty7eyxcx7o"]
+[gd_scene load_steps=24 format=3 uid="uid://6vty7eyxcx7o"]
 
 [ext_resource type="Script" path="res://Scripts/HUD/music_player_widget.gd" id="1_5b31c"]
 [ext_resource type="Texture2D" uid="uid://cevuc4i4epcem" path="res://Art/Player/Player background.png" id="1_dx82w"]
@@ -18,7 +18,6 @@
 [ext_resource type="AudioStream" uid="uid://r73ppkxberh2" path="res://Songs/Protein vs. Carbs (8).mp3" id="10_vyhgm"]
 [ext_resource type="AudioStream" uid="uid://g7wqt371ohdb" path="res://Songs/Protein vs. Carbs.mp3" id="11_wk8e3"]
 [ext_resource type="AudioStream" uid="uid://i33kkwcth6kj" path="res://Songs/Scrotes vs. Protein.mp3" id="12_1kujt"]
-[ext_resource type="Texture2D" uid="uid://iutkg15y3j40" path="res://Art/Player/Play pressed.png" id="15_cjbrl"]
 [ext_resource type="Texture2D" uid="uid://c8waj627vktlb" path="res://Art/Player/Play hover.png" id="15_gopdy"]
 [ext_resource type="Texture2D" uid="uid://bylh6ilprriy" path="res://Art/Player/pause hover.png" id="17_8jx4f"]
 [ext_resource type="Texture2D" uid="uid://c58mx7bfbgptv" path="res://Art/Player/pause pressed.png" id="18_jgw6e"]
@@ -53,7 +52,7 @@ grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(0.5, 0.5)
 texture_normal = ExtResource("2_86ys6")
-texture_pressed = ExtResource("15_cjbrl")
+texture_pressed = ExtResource("15_gopdy")
 texture_hover = ExtResource("15_gopdy")
 stretch_mode = 0
 
