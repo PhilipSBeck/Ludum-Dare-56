@@ -1,18 +1,15 @@
-# Godot-specific files
-/.import/
-/.export/
-/.cache/
+# Godot 4+ specific ignores
+.godot/
 
-# User-specific editor settings
-.editor_settings-*
+# Godot-specific ignores
+.import/
+export.cfg
+export_presets.cfg
 
-# Mono specific (for C# projects)
+# Imported translations (automatically generated from CSV files)
+*.translation
+
+# Mono-specific ignores
 .mono/
-/*.csproj
-/*.sln
-/.mono/
-/data_Godot
-
-# Godot's project file backup
-*.cfg~
-*.godot~
+data_*/
+mono_crash.*.json
