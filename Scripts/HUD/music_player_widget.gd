@@ -7,7 +7,8 @@ var currentSongIdx: int = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	currentSong = songs[0]
+	currentSongIdx = randi_range(0, songs.size()-1)
+	currentSong = songs[currentSongIdx]
 	$AudioStreamPlayer.stream = currentSong
 	$AudioStreamPlayer.play()
 	var splits = currentSong.resource_path.rsplit("/")
