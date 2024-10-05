@@ -27,7 +27,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	UpdateHighlight()
 	
-	if placing_tiles and Input.is_action_just_pressed("Escape"):
+	if placing_tiles and Input.is_action_just_pressed("ui_cancel"):
 		set_placing_tiles(false)
 	if placing_tiles and Input.is_action_just_pressed("ui_click"):
 		attempt_place_fortress()
@@ -87,3 +87,7 @@ func set_placing_tiles(in_placing_tiles: bool):
 
 func _on_main_hud_tower_selected() -> void:
 	set_placing_tiles(!placing_tiles)
+
+
+func _on_pause_menu_quit_to_main() -> void:
+	queue_free()
