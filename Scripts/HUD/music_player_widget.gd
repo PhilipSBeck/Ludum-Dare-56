@@ -13,8 +13,8 @@ func _ready() -> void:
 	$AudioStreamPlayer.play()
 	var splits = currentSong.resource_path.rsplit("/")
 	$ColorRect/Label.text = splits[splits.size()-1]
-	
-
+	$AudioStreamPlayer.volume_db = linear_to_db(0.2)
+	$ColorRect/Volume.value = 20
 
 
 func _on_play_pressed() -> void:
