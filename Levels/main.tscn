@@ -1,14 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://d4hjcmvwxni5t"]
+[gd_scene load_steps=2 format=3 uid="uid://d4hjcmvwxni5t"]
 
-[ext_resource type="Script" path="res://Scripts/Core/camera_2d.gd" id="1_qvoxn"]
-[ext_resource type="Texture2D" uid="uid://qs20w4uo3gw" path="res://Art/Map/Floor/MeatTile2.png" id="2_0rqa0"]
+[ext_resource type="PackedScene" uid="uid://dv8ga14jrgtfb" path="res://Gameplay/Map/WorldMap.tscn" id="1_dsvs6"]
 
 [node name="Main" type="Node"]
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(577, 326)
-script = ExtResource("1_qvoxn")
-
-[node name="MeatTile2" type="Sprite2D" parent="."]
-position = Vector2(576, 327)
-texture = ExtResource("2_0rqa0")
+[node name="TileMapLayer" parent="." instance=ExtResource("1_dsvs6")]
