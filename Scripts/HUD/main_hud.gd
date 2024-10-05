@@ -1,5 +1,8 @@
 extends CanvasLayer
 
+signal towerSelected
+signal turretSelected
+
 var meat: int = 0
 var skin: int = 0
 var bones: int = 0
@@ -26,3 +29,29 @@ func increase_skin(amount: int) -> void:
 func increase_bones(amount: int) -> void:
 	bones += amount
 	$BoneIcon/Bones.text = str(bones)
+
+
+
+func _on_tower_place_btn_hover() -> void:
+	$Hotbar/TowerPlaceBtn/Selector.visible = true
+	$Hotbar/SelectedIcon.text = $Hotbar/TowerPlaceBtn.get_meta("type")
+
+func _on_tower_place_btn_unhover() -> void:
+	$Hotbar/TowerPlaceBtn/Selector.visible = false
+	$Hotbar/SelectedIcon.text = ""
+
+func _on_turret_place_btn_mouse_entered() -> void:
+	$Hotbar/TurretPlaceBtn/Selector.visible = true
+	$Hotbar/SelectedIcon.text = $Hotbar/TurretPlaceBtn.get_meta("type")
+
+func _on_turret_place_btn_mouse_exited() -> void:
+	$Hotbar/TurretPlaceBtn/Selector.visible = false
+	$Hotbar/SelectedIcon.text = ""
+
+
+func _on_turret_place_btn_pressed() -> void:
+	turretSelected.emit()
+
+
+func _on_tower_place_btn_pressed() -> void:
+	towerSelected.emit()

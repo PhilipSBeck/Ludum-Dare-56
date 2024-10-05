@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://v74l8i6gpmfc"]
+[gd_scene load_steps=9 format=3 uid="uid://v74l8i6gpmfc"]
 
 [ext_resource type="Texture2D" uid="uid://p3qtvxt1p3ko" path="res://Art/HUD Icons/meat.png" id="1_64w33"]
 [ext_resource type="Script" path="res://Scripts/HUD/main_hud.gd" id="1_m2r5h"]
@@ -6,64 +6,68 @@
 [ext_resource type="Texture2D" uid="uid://bl0jyom55ooj1" path="res://Art/HUD Icons/Skin.png" id="3_iq8rr"]
 [ext_resource type="Texture2D" uid="uid://bnr4cmahk2e2w" path="res://Art/HUD Icons/boner.png" id="4_wmk1n"]
 [ext_resource type="Texture2D" uid="uid://cqiyhj5yl0rqa" path="res://Art/HUD Icons/Tower.png" id="6_lne5b"]
+[ext_resource type="Texture2D" uid="uid://dy0hli3o6o1kv" path="res://Art/HUD Icons/Selector.png" id="7_3oheq"]
+[ext_resource type="Texture2D" uid="uid://0jrekgsa606j" path="res://Art/HUD Icons/turreticon.png" id="8_qvykq"]
 
 [node name="MainHud" type="CanvasLayer"]
 script = ExtResource("1_m2r5h")
 
 [node name="MeatIcon" type="TextureRect" parent="."]
-offset_right = 32.0
-offset_bottom = 32.0
+offset_right = 64.0
+offset_bottom = 64.0
 texture = ExtResource("1_64w33")
-stretch_mode = 3
 
 [node name="Meat" type="Label" parent="MeatIcon"]
 layout_mode = 0
-offset_left = 25.0
-offset_top = 5.0
-offset_right = 50.0
-offset_bottom = 30.0
+offset_left = 57.0
+offset_top = 14.0
+offset_right = 82.0
+offset_bottom = 54.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_26ql1")
+theme_override_font_sizes/font_size = 32
 text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="SkinIcon" type="TextureRect" parent="."]
-offset_left = 80.0
-offset_right = 112.0
-offset_bottom = 32.0
+offset_left = 160.0
+offset_right = 224.0
+offset_bottom = 64.0
 texture = ExtResource("3_iq8rr")
 
 [node name="Skin" type="Label" parent="SkinIcon"]
 layout_mode = 0
-offset_left = 25.0
-offset_top = 5.0
-offset_right = 50.0
-offset_bottom = 30.0
+offset_left = 59.0
+offset_top = 15.0
+offset_right = 84.0
+offset_bottom = 55.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_26ql1")
+theme_override_font_sizes/font_size = 32
 text = "0
 "
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="BoneIcon" type="TextureRect" parent="."]
-offset_left = 160.0
-offset_right = 192.0
-offset_bottom = 32.0
+offset_left = 320.0
+offset_right = 384.0
+offset_bottom = 64.0
 texture = ExtResource("4_wmk1n")
 
 [node name="Bones" type="Label" parent="BoneIcon"]
 layout_mode = 0
-offset_left = 25.0
-offset_top = 5.0
-offset_right = 50.0
-offset_bottom = 30.0
+offset_left = 59.0
+offset_top = 15.0
+offset_right = 84.0
+offset_bottom = 55.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_26ql1")
+theme_override_font_sizes/font_size = 32
 text = "0
 "
 horizontal_alignment = 1
@@ -78,11 +82,13 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -160.0
-offset_top = -64.0
-offset_right = 160.0
+offset_left = -64.0
+offset_top = -96.29
+offset_right = 64.0
+offset_bottom = -32.29
 grow_horizontal = 2
 grow_vertical = 0
+scale = Vector2(1.5, 1.5)
 
 [node name="TowerPlaceBtn" type="TextureButton" parent="Hotbar"]
 layout_mode = 1
@@ -91,9 +97,8 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -48.0
+offset_left = -64.0
 offset_top = -32.0
-offset_right = 16.0
 offset_bottom = 32.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -101,6 +106,14 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 texture_normal = ExtResource("6_lne5b")
 stretch_mode = 0
+metadata/type = "Tower"
+
+[node name="Selector" type="TextureRect" parent="Hotbar/TowerPlaceBtn"]
+visible = false
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+texture = ExtResource("7_3oheq")
 
 [node name="TurretPlaceBtn" type="TextureButton" parent="Hotbar"]
 layout_mode = 1
@@ -109,11 +122,44 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 16.0
 offset_top = -32.0
-offset_right = 80.0
+offset_right = 64.0
 offset_bottom = 32.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+texture_normal = ExtResource("8_qvykq")
+stretch_mode = 0
+metadata/type = "Turret"
+
+[node name="Selector" type="TextureRect" parent="Hotbar/TurretPlaceBtn"]
+visible = false
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+texture = ExtResource("7_3oheq")
+
+[node name="SelectedIcon" type="Label" parent="Hotbar"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -32.0
+offset_top = -23.0
+offset_right = 32.0
+grow_horizontal = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_26ql1")
+text = "
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="mouse_entered" from="Hotbar/TowerPlaceBtn" to="." method="_on_tower_place_btn_hover"]
+[connection signal="mouse_exited" from="Hotbar/TowerPlaceBtn" to="." method="_on_tower_place_btn_unhover"]
+[connection signal="pressed" from="Hotbar/TowerPlaceBtn" to="." method="_on_tower_place_btn_pressed"]
+[connection signal="mouse_entered" from="Hotbar/TurretPlaceBtn" to="." method="_on_turret_place_btn_mouse_entered"]
+[connection signal="mouse_exited" from="Hotbar/TurretPlaceBtn" to="." method="_on_turret_place_btn_mouse_exited"]
+[connection signal="pressed" from="Hotbar/TurretPlaceBtn" to="." method="_on_turret_place_btn_pressed"]
