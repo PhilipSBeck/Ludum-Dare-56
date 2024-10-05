@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://d4hjcmvwxni5t"]
+[gd_scene load_steps=4 format=3 uid="uid://bxjfd18sjnl6"]
 
 [ext_resource type="Script" path="res://Scripts/Core/camera_2d.gd" id="1_qvoxn"]
 [ext_resource type="Texture2D" uid="uid://qs20w4uo3gw" path="res://Art/Map/Floor/MeatTile2.png" id="2_0rqa0"]
+[ext_resource type="PackedScene" uid="uid://cb4udp41rudyd" path="res://Unit/Turret.tscn" id="3_i0156"]
 
 [node name="Main" type="Node"]
 
@@ -9,6 +10,28 @@
 position = Vector2(577, 326)
 script = ExtResource("1_qvoxn")
 
-[node name="MeatTile2" type="Sprite2D" parent="."]
-position = Vector2(576, 327)
+[node name="Castle" type="Node2D" parent="."]
+
+[node name="CastleMeat" type="Sprite2D" parent="Castle"]
+position = Vector2(544, 288)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_0rqa0")
+
+[node name="CastleMeat2" type="Sprite2D" parent="Castle"]
+position = Vector2(608, 288)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_0rqa0")
+
+[node name="CastleMeat3" type="Sprite2D" parent="Castle"]
+position = Vector2(544, 352)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_0rqa0")
+
+[node name="CastleMeat4" type="Sprite2D" parent="Castle"]
+position = Vector2(608, 352)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_0rqa0")
+
+[node name="Turrets" type="Node2D" parent="."]
+
+[node name="Turret" parent="Turrets" instance=ExtResource("3_i0156")]

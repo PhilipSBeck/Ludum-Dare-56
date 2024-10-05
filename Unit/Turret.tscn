@@ -1,0 +1,39 @@
+[gd_scene load_steps=8 format=3 uid="uid://cb4udp41rudyd"]
+
+[ext_resource type="Script" path="res://Scripts/Units/Turrets/turret.gd" id="1_gghhn"]
+[ext_resource type="PackedScene" uid="uid://cbuunucqe7au2" path="res://Unit/Potato.tscn" id="2_4r1ix"]
+[ext_resource type="Texture2D" uid="uid://c4pict7glk3hc" path="res://Art/Units/Turrets/Turret1-Sheet.png" id="3_3kdcj"]
+[ext_resource type="Script" path="res://Scripts/Units/Turrets/turret_sprite.gd" id="4_kynfe"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8qtn7"]
+atlas = ExtResource("3_3kdcj")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1gp8c"]
+atlas = ExtResource("3_3kdcj")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cdi07"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8qtn7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1gp8c")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[node name="Turret" type="Node2D"]
+position = Vector2(528, 272)
+script = ExtResource("1_gghhn")
+potato_scene = ExtResource("2_4r1ix")
+
+[node name="TurretSprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1.43051e-06, -1.43051e-06)
+scale = Vector2(0.15625, 0.152344)
+sprite_frames = SubResource("SpriteFrames_cdi07")
+script = ExtResource("4_kynfe")

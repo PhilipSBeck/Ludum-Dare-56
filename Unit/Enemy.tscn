@@ -29,19 +29,21 @@ animations = [{
 size = Vector2(121, 100)
 
 [node name="Enemy" type="RigidBody2D"]
-position = Vector2(0, -25)
+position = Vector2(75, 63)
 collision_mask = 0
 gravity_scale = 0.0
 script = ExtResource("1_l1aak")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_fpjwx")
 animation = &"walk"
 frame_progress = 0.273819
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 14)
+scale = Vector2(0.3, 0.3)
 shape = SubResource("RectangleShape2D_m02ui")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
