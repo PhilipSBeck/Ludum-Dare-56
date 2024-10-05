@@ -1,0 +1,155 @@
+[gd_scene load_steps=25 format=3 uid="uid://6vty7eyxcx7o"]
+
+[ext_resource type="Script" path="res://Scripts/HUD/music_player_widget.gd" id="1_5b31c"]
+[ext_resource type="Texture2D" uid="uid://cevuc4i4epcem" path="res://Art/Player/Player background.png" id="1_dx82w"]
+[ext_resource type="Texture2D" uid="uid://crn0ameox2qm2" path="res://Art/Player/Play.png" id="2_86ys6"]
+[ext_resource type="AudioStream" uid="uid://ch0gyojapeqo3" path="res://Songs/Protein vs Carbs (50's).mp3" id="2_rt0uh"]
+[ext_resource type="AudioStream" uid="uid://xrlalpq37paq" path="res://Songs/Protein vs Carbs (Country).mp3" id="3_qcruo"]
+[ext_resource type="Texture2D" uid="uid://7sf3vh2h0ohl" path="res://Art/Player/pause.png" id="3_uwhu1"]
+[ext_resource type="AudioStream" uid="uid://c0m8tn8mli1i3" path="res://Songs/Protein vs. Carbs (1).mp3" id="4_balmf"]
+[ext_resource type="Texture2D" uid="uid://bxe2hoxby4f3o" path="res://Art/Player/next.png" id="4_kefty"]
+[ext_resource type="AudioStream" uid="uid://bsskyoo3wxhun" path="res://Songs/Protein vs. Carbs (2).mp3" id="5_cr3w1"]
+[ext_resource type="FontFile" uid="uid://l348hsha7jl0" path="res://Fonts/PixeloidSansBold-PKnYd.ttf" id="5_hpip8"]
+[ext_resource type="AudioStream" uid="uid://bony478lq3fok" path="res://Songs/Protein vs. Carbs (3).mp3" id="6_5k2la"]
+[ext_resource type="Texture2D" uid="uid://cramueyj2h0ec" path="res://Art/Units/Scrotes/ScroatJenkins.png" id="6_5rxbn"]
+[ext_resource type="AudioStream" uid="uid://kopgd7es4rnm" path="res://Songs/Protein vs. Carbs (4).mp3" id="7_bnov4"]
+[ext_resource type="AudioStream" uid="uid://dccjr4iaguf7j" path="res://Songs/Protein vs. Carbs (5).mp3" id="8_w3rmv"]
+[ext_resource type="AudioStream" uid="uid://d0yddobnsp0is" path="res://Songs/Protein vs. Carbs (7).mp3" id="9_b5cqy"]
+[ext_resource type="AudioStream" uid="uid://r73ppkxberh2" path="res://Songs/Protein vs. Carbs (8).mp3" id="10_vyhgm"]
+[ext_resource type="AudioStream" uid="uid://g7wqt371ohdb" path="res://Songs/Protein vs. Carbs.mp3" id="11_wk8e3"]
+[ext_resource type="AudioStream" uid="uid://i33kkwcth6kj" path="res://Songs/Scrotes vs. Protein.mp3" id="12_1kujt"]
+[ext_resource type="Texture2D" uid="uid://iutkg15y3j40" path="res://Art/Player/Play pressed.png" id="15_cjbrl"]
+[ext_resource type="Texture2D" uid="uid://c8waj627vktlb" path="res://Art/Player/Play hover.png" id="15_gopdy"]
+[ext_resource type="Texture2D" uid="uid://bylh6ilprriy" path="res://Art/Player/pause hover.png" id="17_8jx4f"]
+[ext_resource type="Texture2D" uid="uid://c58mx7bfbgptv" path="res://Art/Player/pause pressed.png" id="18_jgw6e"]
+[ext_resource type="Texture2D" uid="uid://k2b38kvfewgh" path="res://Art/Player/next hover.png" id="19_w4wyx"]
+[ext_resource type="Texture2D" uid="uid://dgh8qcojaakej" path="res://Art/Player/next pressed.png" id="21_6pbvj"]
+
+[node name="MusicPlayerWidget" type="Node"]
+script = ExtResource("1_5b31c")
+songs = Array[AudioStream]([ExtResource("2_rt0uh"), ExtResource("3_qcruo"), ExtResource("4_balmf"), ExtResource("5_cr3w1"), ExtResource("6_5k2la"), ExtResource("7_bnov4"), ExtResource("8_w3rmv"), ExtResource("9_b5cqy"), ExtResource("10_vyhgm"), ExtResource("11_wk8e3"), ExtResource("12_1kujt")])
+
+[node name="ColorRect" type="TextureRect" parent="."]
+anchors_preset = -1
+anchor_right = 0.278
+anchor_bottom = 0.154
+offset_right = -0.256042
+offset_bottom = 0.207993
+texture = ExtResource("1_dx82w")
+
+[node name="Play" type="TextureButton" parent="ColorRect"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 37.0
+offset_top = -42.0
+offset_right = 101.0
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("2_86ys6")
+texture_pressed = ExtResource("15_cjbrl")
+texture_hover = ExtResource("15_gopdy")
+stretch_mode = 0
+
+[node name="Pause" type="TextureButton" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 37.0
+offset_top = -42.0
+offset_right = 101.0
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("3_uwhu1")
+texture_pressed = ExtResource("18_jgw6e")
+texture_hover = ExtResource("17_8jx4f")
+stretch_mode = 0
+
+[node name="Prev" type="TextureButton" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 115.0
+offset_top = -43.0
+offset_right = 179.0
+offset_bottom = 21.0
+grow_vertical = 0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("4_kefty")
+texture_pressed = ExtResource("21_6pbvj")
+texture_hover = ExtResource("19_w4wyx")
+stretch_mode = 0
+flip_h = true
+
+[node name="Next" type="TextureButton" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -49.0
+offset_top = -42.0
+offset_right = 15.0
+offset_bottom = 22.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(0.5, 0.5)
+texture_normal = ExtResource("4_kefty")
+texture_pressed = ExtResource("21_6pbvj")
+texture_hover = ExtResource("19_w4wyx")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -45.0
+offset_top = 4.0
+offset_right = 155.0
+offset_bottom = 42.0
+grow_horizontal = 2
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 5
+theme_override_fonts/font = ExtResource("5_hpip8")
+theme_override_font_sizes/font_size = 16
+text = "Test Song"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 10.0
+offset_top = 7.0
+offset_right = 95.0
+offset_bottom = 91.0
+texture = ExtResource("6_5rxbn")
+expand_mode = 2
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[connection signal="mouse_entered" from="ColorRect/Play" to="." method="_on_play_mouse_entered"]
+[connection signal="mouse_exited" from="ColorRect/Play" to="." method="_on_play_mouse_exited"]
+[connection signal="pressed" from="ColorRect/Play" to="." method="_on_play_pressed"]
+[connection signal="mouse_entered" from="ColorRect/Pause" to="." method="_on_pause_mouse_entered"]
+[connection signal="mouse_exited" from="ColorRect/Pause" to="." method="_on_pause_mouse_exited"]
+[connection signal="pressed" from="ColorRect/Pause" to="." method="_on_pause_pressed"]
+[connection signal="mouse_entered" from="ColorRect/Prev" to="." method="_on_prev_mouse_entered"]
+[connection signal="mouse_exited" from="ColorRect/Prev" to="." method="_on_prev_mouse_exited"]
+[connection signal="pressed" from="ColorRect/Prev" to="." method="_on_prev_pressed"]
+[connection signal="mouse_entered" from="ColorRect/Next" to="." method="_on_next_mouse_entered"]
+[connection signal="mouse_exited" from="ColorRect/Next" to="." method="_on_next_mouse_exited"]
+[connection signal="pressed" from="ColorRect/Next" to="." method="_on_next_pressed"]

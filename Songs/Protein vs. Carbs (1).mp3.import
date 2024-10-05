@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c0m8tn8mli1i3"
+path="res://.godot/imported/Protein vs. Carbs (1).mp3-2258c86bcd61d71cd89e4fe411194c1a.mp3str"
+
+[deps]
+
+source_file="res://Songs/Protein vs. Carbs (1).mp3"
+dest_files=["res://.godot/imported/Protein vs. Carbs (1).mp3-2258c86bcd61d71cd89e4fe411194c1a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
