@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dx80my0br2ctn"]
+
+[ext_resource type="Texture2D" uid="uid://c1vfb2cwi0snu" path="res://Art/Map/Walls/bonewalltile.png" id="1_qlrt3"]
+
+[node name="MeatWall" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_qlrt3")
