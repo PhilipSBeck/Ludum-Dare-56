@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://v74l8i6gpmfc"]
+[gd_scene load_steps=10 format=3 uid="uid://v74l8i6gpmfc"]
 
 [ext_resource type="Texture2D" uid="uid://p3qtvxt1p3ko" path="res://Art/HUD Icons/meat.png" id="1_64w33"]
 [ext_resource type="Script" path="res://Scripts/HUD/main_hud.gd" id="1_m2r5h"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://cqiyhj5yl0rqa" path="res://Art/HUD Icons/Tower.png" id="6_lne5b"]
 [ext_resource type="Texture2D" uid="uid://dy0hli3o6o1kv" path="res://Art/HUD Icons/Selector.png" id="7_3oheq"]
 [ext_resource type="Texture2D" uid="uid://0jrekgsa606j" path="res://Art/HUD Icons/turreticon.png" id="8_qvykq"]
+[ext_resource type="PackedScene" uid="uid://6vty7eyxcx7o" path="res://HUD/MusicPlayerWidget.tscn" id="9_krd8q"]
 
 [node name="MainHud" type="CanvasLayer"]
 script = ExtResource("1_m2r5h")
@@ -163,6 +164,19 @@ text = "
 "
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="MusicPlayerWidget" parent="." instance=ExtResource("9_krd8q")]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -332.0
+offset_top = -103.0
+offset_right = -8.0
+offset_bottom = -5.0
+grow_horizontal = 0
+grow_vertical = 0
 
 [connection signal="mouse_entered" from="Hotbar/TowerPlaceBtn" to="." method="_on_tower_place_btn_hover"]
 [connection signal="mouse_exited" from="Hotbar/TowerPlaceBtn" to="." method="_on_tower_place_btn_unhover"]

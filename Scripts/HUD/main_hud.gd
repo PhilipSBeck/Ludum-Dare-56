@@ -3,14 +3,16 @@ extends CanvasLayer
 signal towerSelected
 signal turretSelected
 
-var meat: int = 0
-var skin: int = 0
-var bones: int = 0
+var meat: int = 100
+var skin: int = 100
+var bones: int = 100
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	$MeatIcon/Meat.text = str(meat)
+	$SkinIcon/Skin.text = str(skin)
+	$BoneIcon/Bones.text = str(bones)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
