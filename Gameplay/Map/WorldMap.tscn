@@ -1,12 +1,15 @@
 [gd_scene load_steps=5 format=3 uid="uid://dv8ga14jrgtfb"]
 
-[ext_resource type="Texture2D" uid="uid://cbomi4p28jwsv" path="res://Art/Map/Floor/TileSet.png" id="1_i8mjs"]
+[ext_resource type="Texture2D" uid="uid://bsnnnedb70g0f" path="res://Art/Map/Floor/TileSet.png" id="1_i8mjs"]
 [ext_resource type="Script" path="res://Scripts/Gameplay/Map/world_map.gd" id="2_ky3nb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7b8xy"]
 texture = ExtResource("1_i8mjs")
 texture_region_size = Vector2i(128, 128)
 0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_vao3d"]
 tile_size = Vector2i(128, 128)
