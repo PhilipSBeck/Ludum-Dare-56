@@ -1,12 +1,49 @@
-[gd_scene format=3 uid="uid://gl5n4qwltrfa"]
+[gd_scene load_steps=7 format=3 uid="uid://gl5n4qwltrfa"]
+
+[ext_resource type="Script" path="res://Scripts/Units/Enemies/enemy.gd" id="1_l1aak"]
+[ext_resource type="Texture2D" uid="uid://c4okcpbsryxyl" path="res://Art/Units/Enemies/Enemy1SpriteSheet-Sheet.png" id="1_rlqyn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_krk1y"]
+atlas = ExtResource("1_rlqyn")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lhv0a"]
+atlas = ExtResource("1_rlqyn")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fpjwx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_krk1y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lhv0a")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 3.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m02ui"]
+size = Vector2(121, 100)
 
 [node name="Enemy" type="RigidBody2D"]
+position = Vector2(0, -25)
 collision_mask = 0
 gravity_scale = 0.0
+script = ExtResource("1_l1aak")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_fpjwx")
+animation = &"walk"
+frame_progress = 0.273819
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 14)
+shape = SubResource("RectangleShape2D_m02ui")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
