@@ -1,0 +1,62 @@
+[gd_scene load_steps=9 format=3 uid="uid://cm2wx2hxyu6m8"]
+
+[ext_resource type="Texture2D" uid="uid://cjgxx85frllxe" path="res://Art/Units/Spawners/SpawningPool-Sheet.png" id="1_b48v8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o6j0b"]
+atlas = ExtResource("1_b48v8")
+region = Rect2(0, 0, 512, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cxy33"]
+atlas = ExtResource("1_b48v8")
+region = Rect2(512, 0, 512, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6kmpo"]
+atlas = ExtResource("1_b48v8")
+region = Rect2(1024, 0, 512, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_osman"]
+atlas = ExtResource("1_b48v8")
+region = Rect2(1536, 0, 512, 256)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iprs5"]
+atlas = ExtResource("1_b48v8")
+region = Rect2(2048, 0, 512, 256)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y6ryw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o6j0b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cxy33")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6kmpo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_osman")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iprs5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wi3b7"]
+
+[node name="SpawningPool" type="Area2D"]
+scale = Vector2(0.977907, 0.991403)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_y6ryw")
+autoplay = "default"
+frame_progress = 0.618612
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 19)
+scale = Vector2(29.4884, 7.44486)
+shape = SubResource("CircleShape2D_wi3b7")
+disabled = true
