@@ -4,7 +4,7 @@
 [ext_resource type="FontFile" uid="uid://l348hsha7jl0" path="res://Fonts/PixeloidSansBold-PKnYd.ttf" id="1_um3ig"]
 [ext_resource type="PackedScene" path="res://HUD/MusicPlayerWidget.tscn" id="3_bm1wk"]
 
-[node name="TitleScreen" type="CanvasLayer"]
+[node name="TitleScreen2" type="CanvasLayer"]
 script = ExtResource("1_lwn1s")
 
 [node name="Title" type="Label" parent="."]

@@ -2,6 +2,10 @@ extends Node
 
 var placing_tiles = false
 
+const WALL_PRICE_BONE = 30
+const WALL_PRICE_MEAT = 50
+const WALL_PRICE_SKIN = 12
+
 const MEAT_WALL = preload("res://Structures/Walls/MeatWall.tscn")
 
 var building_dictionary = {}
@@ -32,6 +36,16 @@ func get_fortress_corner_from_map_pos(mapPos: Vector2i):
 	return (mapPos - (mapPos % 5))
 	
 func attempt_place_fortress():
+	if $MainHud.bones < WALL_PRICE_BONE:
+		return
+	if $MainHud.meat < WALL_PRICE_MEAT:
+		return
+	if $MainHud.skin < WALL_PRICE_SKIN:
+		return
+	$MainHud.increase_bones(-WALL_PRICE_BONE)
+	$MainHud.increase_meat(-WALL_PRICE_MEAT)
+	$MainHud.increase_skin(-WALL_PRICE_SKIN)
+	
 	# TODO this should also add walls and cost something
 	var mousePos = $TileMapLayer.get_global_mouse_position()
 	var mapPos =  $TileMapLayer.local_to_map(mousePos)
