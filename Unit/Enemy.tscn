@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://gl5n4qwltrfa"]
+[gd_scene load_steps=8 format=3 uid="uid://gl5n4qwltrfa"]
 
 [ext_resource type="Script" path="res://Scripts/Units/Enemies/enemy.gd" id="1_l1aak"]
 [ext_resource type="Texture2D" uid="uid://c4okcpbsryxyl" path="res://Art/Units/Enemies/Enemy1SpriteSheet-Sheet.png" id="1_rlqyn"]
+[ext_resource type="Script" path="res://Scripts/Units/Enemies/animated_sprite.gd" id="3_qh4b0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_krk1y"]
 atlas = ExtResource("1_rlqyn")
@@ -40,6 +41,7 @@ scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_fpjwx")
 animation = &"walk"
 frame_progress = 0.273819
+script = ExtResource("3_qh4b0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 14)

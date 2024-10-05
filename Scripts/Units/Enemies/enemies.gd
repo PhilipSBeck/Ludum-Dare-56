@@ -41,7 +41,18 @@ func spawn_enemy():
 	set_target(enemy)
 
 func set_target(enemy) -> void:
-	enemy.target_position = get_global_mouse_position()
+	var closest_turret = null
+	var closest = 99999999
+
+	for turret in get_parent().get_node("Turrets").get_children():
+		if turret is Node2D:
+			var dist = abs(turret.position.x - position.x) + abs(turret.position.y - position.y)
+			if dist < closest:
+				closest = dist
+				closest_turret = turret
+	
+	if closest_turret:
+		enemy.target_position = Vector2(closest_turret.position.x, closest_turret.position.y)
 
 func get_random_edge_position() -> Vector2:
 	# Choose a random edge: 0 = top, 1 = right, 2 = bottom, 3 = left
