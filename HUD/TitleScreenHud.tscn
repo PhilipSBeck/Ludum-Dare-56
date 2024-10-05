@@ -1,0 +1,63 @@
+[gd_scene load_steps=3 format=3 uid="uid://c634xgfsl5fmh"]
+
+[ext_resource type="Script" path="res://Scripts/Core/title_screen_hud.gd" id="1_lwn1s"]
+[ext_resource type="FontFile" uid="uid://l348hsha7jl0" path="res://Fonts/PixeloidSansBold-PKnYd.ttf" id="1_um3ig"]
+
+[node name="TitleScreen" type="CanvasLayer"]
+script = ExtResource("1_lwn1s")
+
+[node name="Title" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -73.0
+offset_top = 50.0
+offset_right = 73.0
+offset_bottom = 73.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.694508, 0.886431, 0.912578, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 18
+theme_override_fonts/font = ExtResource("1_um3ig")
+theme_override_font_sizes/font_size = 50
+text = "CARBS VS PROTEIN"
+horizontal_alignment = 1
+
+[node name="Buttons" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -24.0
+offset_right = 100.0
+offset_bottom = 176.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Start Button" type="Button" parent="Buttons"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 8.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_um3ig")
+theme_override_font_sizes/font_size = 25
+text = "Start
+"
+
+[node name="Quit Button" type="Button" parent="Buttons"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 50.0
+offset_bottom = 89.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("1_um3ig")
+theme_override_font_sizes/font_size = 25
+text = "Quit Game"
+
+[connection signal="pressed" from="Buttons/Start Button" to="." method="_on_start_button_pressed"]

@@ -17,6 +17,7 @@ texture = ExtResource("1_64w33")
 stretch_mode = 3
 
 [node name="Meat" type="Label" parent="MeatIcon"]
+layout_mode = 0
 offset_left = 25.0
 offset_top = 5.0
 offset_right = 50.0
@@ -35,6 +36,7 @@ offset_bottom = 32.0
 texture = ExtResource("3_iq8rr")
 
 [node name="Skin" type="Label" parent="SkinIcon"]
+layout_mode = 0
 offset_left = 25.0
 offset_top = 5.0
 offset_right = 50.0
@@ -54,6 +56,7 @@ offset_bottom = 32.0
 texture = ExtResource("4_wmk1n")
 
 [node name="Bones" type="Label" parent="BoneIcon"]
+layout_mode = 0
 offset_left = 25.0
 offset_top = 5.0
 offset_right = 50.0
