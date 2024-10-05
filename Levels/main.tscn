@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://d4hjcmvwxni5t"]
+[gd_scene load_steps=8 format=3 uid="uid://d4hjcmvwxni5t"]
 
 [ext_resource type="PackedScene" uid="uid://dv8ga14jrgtfb" path="res://Gameplay/Map/WorldMap.tscn" id="1_dsvs6"]
 [ext_resource type="Script" path="res://Scripts/Core/camera_2d.gd" id="1_qvoxn"]
@@ -7,7 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://bay8ourwndfe8" path="res://Art/Map/Floor/TileHighlight.png" id="3_vuw60"]
 [ext_resource type="PackedScene" uid="uid://bgghx27ni246q" path="res://HUD/pauseMenu.tscn" id="7_j0glq"]
 [ext_resource type="PackedScene" uid="uid://v74l8i6gpmfc" path="res://HUD/mainHUD.tscn" id="7_j582s"]
-[ext_resource type="PackedScene" uid="uid://6vty7eyxcx7o" path="res://HUD/MusicPlayerWidget.tscn" id="8_n8uli"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_vq540")
@@ -29,12 +28,6 @@ texture = ExtResource("3_vuw60")
 [node name="MainHud" parent="." instance=ExtResource("7_j582s")]
 
 [node name="PauseMenu" parent="." instance=ExtResource("7_j0glq")]
-
-[node name="MusicPlayerWidget" parent="." instance=ExtResource("8_n8uli")]
-offset_left = 829.0
-offset_top = 538.0
-offset_right = 848.024
-offset_bottom = 549.56
 
 [connection signal="towerSelected" from="MainHud" to="." method="_on_main_hud_tower_selected"]
 [connection signal="quit_to_main" from="PauseMenu" to="." method="_on_pause_menu_quit_to_main"]
