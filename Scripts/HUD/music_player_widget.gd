@@ -96,3 +96,22 @@ func _on_next_mouse_entered() -> void:
 func _on_next_mouse_exited() -> void:
 	pass
 	#$ColorRect/Next.modulate(Color.WHITE)
+
+
+
+
+func _on_volume_value_changed(value: float) -> void:
+	$AudioStreamPlayer.volume_db = linear_to_db(value/100)
+
+
+func _on_audio_stream_player_finished() -> void:
+	var len = songs.size()
+	currentSongIdx+=1
+	if currentSongIdx >= len:
+		currentSongIdx = 0
+		
+	currentSong = songs[currentSongIdx]
+	$AudioStreamPlayer.stream = currentSong
+	$AudioStreamPlayer.play()
+	var splits = currentSong.resource_path.rsplit("/")
+	$ColorRect/Label.text = splits[splits.size()-1]
