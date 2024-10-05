@@ -148,6 +148,7 @@ offset_bottom = 98.0
 value = 100.0
 
 [node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
 offset_left = 10.0
 offset_top = 7.0
 offset_right = 95.0

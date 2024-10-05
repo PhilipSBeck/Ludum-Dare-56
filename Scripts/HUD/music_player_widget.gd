@@ -7,7 +7,7 @@ var currentSongIdx: int = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	currentSongIdx = randi_range(0, songs.size()-1)
+	#currentSongIdx = randi_range(0, songs.size()-1)
 	currentSong = songs[currentSongIdx]
 	$AudioStreamPlayer.stream = currentSong
 	$AudioStreamPlayer.play()
@@ -33,7 +33,8 @@ func _on_pause_pressed() -> void:
 
 func _on_prev_pressed() -> void:
 	var len = songs.size()
-	currentSongIdx-=1
+	currentSongIdx -= randi_range(1, songs.size()-1)
+	#currentSongIdx-=1
 	if currentSongIdx < 0:
 		currentSongIdx = len-1
 		
@@ -47,7 +48,8 @@ func _on_prev_pressed() -> void:
 
 func _on_next_pressed() -> void:
 	var len = songs.size()
-	currentSongIdx+=1
+	currentSongIdx += randi_range(0, songs.size()-1)
+	#currentSongIdx+=1
 	if currentSongIdx >= len:
 		currentSongIdx = 0
 		
