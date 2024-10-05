@@ -60,48 +60,6 @@ func _on_next_pressed() -> void:
 	$ColorRect/Label.text = splits[splits.size()-1]
 
 
-func _on_play_mouse_entered() -> void:
-	pass
-	#$ColorRect/Play.modulate(Color.DARK_GRAY)
-
-
-func _on_play_mouse_exited() -> void:
-	pass
-	#$ColorRect/Play.modulate(Color.WHITE)
-
-
-func _on_pause_mouse_entered() -> void:
-	pass
-	#$ColorRect/Pause.modulate(Color.WHITE)
-
-
-func _on_pause_mouse_exited() -> void:
-	pass
-	#$ColorRect/Pause.modulate(Color.WHITE)
-
-
-func _on_prev_mouse_entered() -> void:
-	pass
-	#$ColorRect/Prev.modulate(Color.DARK_GRAY)
-
-
-func _on_prev_mouse_exited() -> void:
-	pass
-	#$ColorRect/Prev.modulate(Color.WHITE)
-
-
-func _on_next_mouse_entered() -> void:
-	pass
-	#$ColorRect/Next.modulate(Color.DARK_GRAY)
-
-
-func _on_next_mouse_exited() -> void:
-	pass
-	#$ColorRect/Next.modulate(Color.WHITE)
-
-
-
-
 func _on_volume_value_changed(value: float) -> void:
 	$AudioStreamPlayer.volume_db = linear_to_db(value/100)
 
