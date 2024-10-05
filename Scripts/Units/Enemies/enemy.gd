@@ -1,15 +1,22 @@
-extends RigidBody2D
+extends Node2D
 
+@onready var sprite = $AnimatedSprite2D  # Assuming the sprite is a child of the Node2D
+var target_position: Vector2 = Vector2.ZERO
+@export var speed: float = 100.0
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+func _process(delta: float):
+	# Calculate the direction to the mouse position
+	var direction = (target_position - position).normalized()
 
+	# Move towards the target position
+	position += direction * speed * delta
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+	# Check if the enemy is moving to the left (i.e., the x component of direction is negative)
+	if direction.x < 0:
+		sprite.flip_h = true  # Flip the sprite horizontally
+	else:
+		sprite.flip_h = false  # Ensure it's not flipped if moving right
 
-
-func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
-	queue_free()
+	# Optionally, free the enemy when it reaches the target (to prevent it from moving indefinitely)
+	if position.distance_to(target_position) < 10:
+		queue_free()

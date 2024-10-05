@@ -1,8 +1,8 @@
-[gd_scene load_steps=9 format=4 uid="uid://bedgen3y5e5xh"]
+[gd_scene load_steps=9 format=4 uid="uid://cmrxi8qfrseay"]
 
 [ext_resource type="Texture2D" uid="uid://bsnnnedb70g0f" path="res://Art/Map/Floor/TileSet.png" id="1_ioi34"]
 [ext_resource type="Script" path="res://Scripts/Core/title_screen.gd" id="1_x8bk8"]
-[ext_resource type="PackedScene" uid="uid://c634xgfsl5fmh" path="res://HUD/TitleScreenHud.tscn" id="2_wppsg"]
+[ext_resource type="PackedScene" uid="uid://deslvvbg72tu6" path="res://HUD/TitleScreenHud.tscn" id="2_wppsg"]
 [ext_resource type="PackedScene" uid="uid://cm2wx2hxyu6m8" path="res://Unit/Spawners/SpawningPool.tscn" id="4_whn0m"]
 [ext_resource type="PackedScene" uid="uid://dte3uhl6ck5hh" path="res://Unit/Scrote.tscn" id="5_8dhs3"]
 
