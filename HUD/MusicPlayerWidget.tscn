@@ -24,16 +24,22 @@
 [ext_resource type="Texture2D" uid="uid://k2b38kvfewgh" path="res://Art/Player/next hover.png" id="19_w4wyx"]
 [ext_resource type="Texture2D" uid="uid://dgh8qcojaakej" path="res://Art/Player/next pressed.png" id="21_6pbvj"]
 
-[node name="MusicPlayerWidget" type="Node"]
+[node name="MusicPlayerWidget" type="Control"]
+layout_mode = 3
+anchor_right = 0.263
+anchor_bottom = 0.155
+offset_right = 19.024
+offset_bottom = 11.56
 script = ExtResource("1_5b31c")
 songs = Array[AudioStream]([ExtResource("2_rt0uh"), ExtResource("3_qcruo"), ExtResource("4_balmf"), ExtResource("5_cr3w1"), ExtResource("6_5k2la"), ExtResource("7_bnov4"), ExtResource("8_w3rmv"), ExtResource("9_b5cqy"), ExtResource("10_vyhgm"), ExtResource("11_wk8e3"), ExtResource("12_1kujt")])
 
 [node name="ColorRect" type="TextureRect" parent="."]
+layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.278
 anchor_bottom = 0.154
-offset_right = -0.256042
-offset_bottom = 0.207993
+offset_right = 230.484
+offset_bottom = 82.752
 texture = ExtResource("1_dx82w")
 
 [node name="Play" type="TextureButton" parent="ColorRect"]
