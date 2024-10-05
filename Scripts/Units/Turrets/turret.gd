@@ -16,7 +16,7 @@ func _process(delta: float):
 func shoot_potato():
 	var potato = potato_scene.instantiate()
 	add_child(potato)
-
+	potato.z_index = 100
 	
 	potato.position = Vector2(0, 0)
 	
