@@ -2,9 +2,12 @@ ea4bc82a6ad023ab7ee23ee620429895
 ::res://::1728117293
 icon.svg::CompressedTexture2D::4146542727428341185::1728069665::1728069671::1::::<><>::
 README.md::TextFile::-1::1728070375::0::1::::<><>::
-::res://Art/::1728117239
+::res://Art/::1728117753
 ::res://Art/Map/::1728117293
 ::res://Art/Map/Floor/::1728117293
 MeatTile2.png::CompressedTexture2D::34172514784572578::1728117287::1728117293::1::::<><>::
+::res://Art/Units/::1728117760
+::res://Art/Units/Enemies/::1728117791
+Enemy1SpriteSheet-Sheet.png::CompressedTexture2D::6837830653198035175::1728117791::1728117792::1::::<><>::
 ::res://Levels/::1728116966
 main.tscn::PackedScene::9209739849135299463::1728116966::0::1::::<><>::
