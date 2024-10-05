@@ -1,5 +1,7 @@
 extends Node2D
 
+signal increase_resources
+
 @export var enemy_scene: PackedScene
 @export var spawn_rate: float = 2.0
 @export var enemy_speed: float = 100.0
@@ -39,6 +41,8 @@ func spawn_enemy():
 
 	# Move the enemy towards the mouse position (handled in the enemy script)
 	set_target(enemy)
+	
+	enemy.on_death.connect(on_death_of_enemy)
 
 func set_target(enemy) -> void:
 	var closest_turret = null
@@ -74,3 +78,6 @@ func get_random_edge_position() -> Vector2:
 			position.y = randf() * screen_size.y
 
 	return position
+	
+func on_death_of_enemy() -> void:
+	increase_resources.emit()

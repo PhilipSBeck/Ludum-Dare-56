@@ -1,5 +1,7 @@
 extends Node2D
 
+signal on_death
+
 @onready var sprite = $AnimatedSprite2D  # Assuming the sprite is a child of the Node2D
 var target_position: Vector2 = Vector2.ZERO
 @export var speed: float = 100.0

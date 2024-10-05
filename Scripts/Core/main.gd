@@ -14,6 +14,11 @@ const TURRET_PRICE_SKIN = 0
 const MEAT_WALL = preload("res://Structures/Walls/MeatWall.tscn")
 const TURRET = preload("res://Unit/Turret.tscn")
 
+#TODO: Change these values
+const SKIN_GAINED = 10
+const BONES_GAINED = 10
+const MEAT_GAINED = 10
+
 var building_dictionary = {}
 
 func UpdateHighlight():
@@ -131,3 +136,9 @@ func _on_main_hud_turret_selected() -> void:
 	set_placing_tiles(false)
 	placing_turrets = true;
 	pass
+
+
+func _on_enemies_increase_resources() -> void:
+	$MainHud.increase_bones(BONES_GAINED)
+	$MainHud.increase_meat(MEAT_GAINED)
+	$MainHud.increase_skin(SKIN_GAINED)
