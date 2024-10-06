@@ -92,6 +92,13 @@ func attempt_place_fortress():
 					add_child(wall)
 	check_wall_adjecency()
 	set_placing_tiles(false)
+	
+	
+	var fortress_min = Vector2(mapPos)+Vector2(50.0, 50.0)
+	var fortress_max = Vector2(mapPos)+Vector2(5,5)+Vector2(50.0, 50.0)
+	delete_spawner_here(Rect2(fortress_min, fortress_max))
+	
+	
 
 func attempt_place_building(building_resource: Resource, bone_price: float, skin_price: float, meat_price: float, is_turret: bool = false):
 	var mousePos = $TileMapLayer.get_global_mouse_position()
@@ -173,3 +180,32 @@ func _on_enemies_increase_resources() -> void:
 	$MainHud.increase_bones(BONES_GAINED)
 	$MainHud.increase_meat(MEAT_GAINED)
 	$MainHud.increase_skin(SKIN_GAINED)
+	
+func delete_spawner_here(bounds: Rect2) -> void:
+	var spawners = $Spawners.get_children()
+	for spawner in spawners:
+		var spawner_col_shape: CollisionShape2D = spawner.get_node("CollisionShape2D")
+		var spawner_scale = spawner_col_shape.scale*0.5
+		var spawner_bounds_min = (spawner.position/128.0)-Vector2(2, 1)+Vector2(50.0, 50.0)
+		var spawner_bounds_max = (spawner.position/128.0)+Vector2(2, 1)+Vector2(50.0, 50.0)
+		
+		var spawner_bounds = Rect2(spawner_bounds_min, spawner_bounds_max)
+		
+		if rects_overlap(spawner_bounds, bounds):
+		#if spawner_bounds.intersects(bounds):
+			spawner.queue_free()
+			
+func rects_overlap(a: Rect2, b: Rect2) -> bool:
+	if(a.position.x > b.size.x
+		or b.position.x > a.size.x
+		or a.position.y > b.size.y
+		or b.position.y > a.size.y):
+			return false
+	
+	return true
+		
+	
+	
+	
+
+	
