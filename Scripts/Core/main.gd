@@ -9,7 +9,7 @@ const WALL_PRICE_BONE = 30
 const WALL_PRICE_MEAT = 50
 const WALL_PRICE_SKIN = 12
 
-const TURRET_PRICE_BONE = 45
+const TURRET_PRICE_BONE = 35
 const TURRET_PRICE_MEAT = 25
 const TURRET_PRICE_SKIN = 0
 
@@ -22,9 +22,9 @@ const TURRET = preload("res://Unit/Turret.tscn")
 const HOUSE = preload("res://Unit/Spawners/ScroteHouse.tscn")
 
 #TODO: Change these values
-const SKIN_GAINED = 10
-const BONES_GAINED = 10
-const MEAT_GAINED = 10
+const SKIN_GAINED = 5
+const BONES_GAINED = 5
+const MEAT_GAINED = 5
 
 const MAX_ENEMIES = 200
 @export var total_enemies = 0
