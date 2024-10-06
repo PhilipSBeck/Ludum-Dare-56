@@ -135,7 +135,7 @@ func attempt_place_building(building_resource: Resource, bone_price: float, skin
 		add_child(building)
 		$Camera2D/HouseNoise.play()
 		
-	building_dictionary[building.position] = building
+	building_dictionary[mapPos] = building
 
 func check_wall_adjecency():
 	var walls_to_destroy = []
