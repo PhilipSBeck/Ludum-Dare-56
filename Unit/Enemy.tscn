@@ -26,13 +26,10 @@ animations = [{
 "speed": 3.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_m02ui"]
-size = Vector2(121, 100)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l3kj4"]
+size = Vector2(133.333, 106.667)
 
-[node name="Enemy" type="RigidBody2D"]
-position = Vector2(75, 63)
-collision_mask = 0
-gravity_scale = 0.0
+[node name="Enemy" type="Area2D"]
 script = ExtResource("1_l1aak")
 metadata/_edit_group_ = true
 
@@ -44,10 +41,6 @@ frame_progress = 0.273819
 script = ExtResource("3_qh4b0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 14)
-scale = Vector2(0.3, 0.3)
-shape = SubResource("RectangleShape2D_m02ui")
-
-[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
-
-[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
+position = Vector2(1.78814e-07, 7)
+scale = Vector2(0.293643, 0.234672)
+shape = SubResource("RectangleShape2D_l3kj4")

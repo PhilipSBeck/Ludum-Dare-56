@@ -5,7 +5,7 @@
 [ext_resource type="Script" path="res://Scripts/Core/main.gd" id="1_vq540"]
 [ext_resource type="PackedScene" uid="uid://cb4udp41rudyd" path="res://Unit/Turret.tscn" id="3_i0156"]
 [ext_resource type="Texture2D" uid="uid://bay8ourwndfe8" path="res://Art/Map/Floor/TileHighlight.png" id="3_vuw60"]
-[ext_resource type="PackedScene" path="res://HUD/pauseMenu.tscn" id="7_j0glq"]
+[ext_resource type="PackedScene" uid="uid://bgghx27ni246q" path="res://HUD/pauseMenu.tscn" id="7_j0glq"]
 [ext_resource type="PackedScene" uid="uid://v74l8i6gpmfc" path="res://HUD/mainHUD.tscn" id="7_j582s"]
 [ext_resource type="Script" path="res://Scripts/Units/Enemies/enemies.gd" id="7_nfqvv"]
 [ext_resource type="PackedScene" uid="uid://gl5n4qwltrfa" path="res://Unit/Enemy.tscn" id="8_yb52r"]

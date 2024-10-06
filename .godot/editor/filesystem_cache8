@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1728153477
+::res://::1728206042
 icon.svg::CompressedTexture2D::4146542727428341185::1728070469::1728132280::1::::<><>::
 README.md::TextFile::-1::1728119582::0::1::::<><>::
 ::res://Art/::1728153307
@@ -47,38 +47,42 @@ PixeloidSansBold-PKnYd.ttf::FontFile::831699976910365971::1728132289::1728132472
 ::res://Gameplay/::1728132289
 ::res://Gameplay/Map/::1728134798
 WorldMap.tscn::PackedScene::8701717946156880919::1728134798::0::1::::<><>::uid://bsnnnedb70g0f::::res://Art/Map/Floor/TileSet.png<>res://Scripts/Gameplay/Map/world_map.gd
-::res://HUD/::1728156730
-mainHUD.tscn::PackedScene::1541807988097884052::1728153307::0::1::::<><>::uid://p3qtvxt1p3ko::::res://Art/HUD Icons/meat.png<>res://Scripts/HUD/main_hud.gd<>uid://l348hsha7jl0::::res://Fonts/PixeloidSansBold-PKnYd.ttf<>uid://bl0jyom55ooj1::::res://Art/HUD Icons/Skin.png<>uid://bnr4cmahk2e2w::::res://Art/HUD Icons/boner.png<>uid://cqiyhj5yl0rqa::::res://Art/HUD Icons/Tower.png<>uid://dy0hli3o6o1kv::::res://Art/HUD Icons/Selector.png<>uid://0jrekgsa606j::::res://Art/HUD Icons/turreticon.png
+::res://HUD/::1728159823
+mainHUD.tscn::PackedScene::1541807988097884052::1728159823::0::1::::<><>::uid://p3qtvxt1p3ko::::res://Art/HUD Icons/meat.png<>res://Scripts/HUD/main_hud.gd<>uid://l348hsha7jl0::::res://Fonts/PixeloidSansBold-PKnYd.ttf<>uid://bl0jyom55ooj1::::res://Art/HUD Icons/Skin.png<>uid://bnr4cmahk2e2w::::res://Art/HUD Icons/boner.png<>uid://cqiyhj5yl0rqa::::res://Art/HUD Icons/Tower.png<>uid://dy0hli3o6o1kv::::res://Art/HUD Icons/Selector.png<>uid://0jrekgsa606j::::res://Art/HUD Icons/turreticon.png<>uid://6vty7eyxcx7o::::res://HUD/MusicPlayerWidget.tscn
 MusicPlayerWidget.tscn::PackedScene::-1::1728156730::0::1::::<><>::
-TitleScreenHud.tscn::PackedScene::7477882718648559211::1728153370::0::1::::<><>::res://Scripts/Core/title_screen_hud.gd<>uid://l348hsha7jl0::::res://Fonts/PixeloidSansBold-PKnYd.ttf<>uid://6vty7eyxcx7o::::res://HUD/MusicPlayerWidget.tscn
-::res://Levels/::1728156730
-main.tscn::PackedScene::9209739849135299463::1728156694::0::1::::<><>::uid://dv8ga14jrgtfb::::res://Gameplay/Map/WorldMap.tscn<>res://Scripts/Core/camera_2d.gd<>res://Scripts/Core/main.gd<>uid://cb4udp41rudyd::::res://Unit/Turret.tscn<>uid://bay8ourwndfe8::::res://Art/Map/Floor/TileHighlight.png<>uid://v74l8i6gpmfc::::res://HUD/mainHUD.tscn<>res://Scripts/Units/Enemies/enemies.gd<>uid://gl5n4qwltrfa::::res://Unit/Enemy.tscn
-TitleScreen.tscn::PackedScene::5651614448284507112::1728156694::0::1::::<><>::uid://bsnnnedb70g0f::::res://Art/Map/Floor/TileSet.png<>res://Scripts/Core/title_screen.gd<>uid://deslvvbg72tu6::::res://HUD/TitleScreenHud.tscn<>uid://cm2wx2hxyu6m8::::res://Unit/Spawners/SpawningPool.tscn<>uid://dte3uhl6ck5hh::::res://Unit/Scrote.tscn
+pauseMenu.tscn::PackedScene::2820407572421474074::1728159823::0::1::::<><>::res://Scripts/HUD/pause_menu.gd<>uid://l348hsha7jl0::::res://Fonts/PixeloidSansBold-PKnYd.ttf<>res://Shaders/blur.gdshader
+TitleScreenHud.tscn::PackedScene::2286601685418041002::1728159823::0::1::::<><>::res://Scripts/Core/title_screen_hud.gd<>uid://l348hsha7jl0::::res://Fonts/PixeloidSansBold-PKnYd.ttf<>uid://6vty7eyxcx7o::::res://HUD/MusicPlayerWidget.tscn
+::res://Levels/::1728164837
+main.tscn::PackedScene::9209739849135299463::1728164837::0::1::::<><>::uid://dv8ga14jrgtfb::::res://Gameplay/Map/WorldMap.tscn<>res://Scripts/Core/camera_2d.gd<>res://Scripts/Core/main.gd<>uid://cb4udp41rudyd::::res://Unit/Turret.tscn<>uid://bay8ourwndfe8::::res://Art/Map/Floor/TileHighlight.png<>res://HUD/pauseMenu.tscn<>uid://v74l8i6gpmfc::::res://HUD/mainHUD.tscn<>res://Scripts/Units/Enemies/enemies.gd<>uid://gl5n4qwltrfa::::res://Unit/Enemy.tscn
+TitleScreen.tscn::PackedScene::5651614448284507112::1728164837::0::1::::<><>::uid://bsnnnedb70g0f::::res://Art/Map/Floor/TileSet.png<>res://Scripts/Core/title_screen.gd<>uid://deslvvbg72tu6::::res://HUD/TitleScreenHud.tscn<>uid://cm2wx2hxyu6m8::::res://Unit/Spawners/SpawningPool.tscn<>uid://dte3uhl6ck5hh::::res://Unit/Scrote.tscn
 ::res://Scripts/::1728132289
-::res://Scripts/Core/::1728156730
+::res://Scripts/Core/::1728159823
 camera_2d.gd::GDScript::-1::1728132289::0::1::::<>Camera2D<>::
-main.gd::GDScript::-1::1728153307::0::1::::<>Node<>::
+main.gd::GDScript::-1::1728159823::0::1::::<>Node<>::
 title_screen.gd::GDScript::-1::1728156730::0::1::::<>Node<>::
 title_screen_hud.gd::GDScript::-1::1728156730::0::1::::<>CanvasLayer<>::
 ::res://Scripts/Gameplay/::1728132289
-::res://Scripts/Gameplay/Map/::1728133388
-world_map.gd::GDScript::-1::1728133388::0::1::::<>TileMapLayer<>::
-::res://Scripts/HUD/::1728156730
-main_hud.gd::GDScript::-1::1728153307::0::1::::<>CanvasLayer<>::
+::res://Scripts/Gameplay/Map/::1728163916
+world_map.gd::GDScript::-1::1728163916::0::1::::<>TileMapLayer<>::
+::res://Scripts/HUD/::1728159823
+main_hud.gd::GDScript::-1::1728159823::0::1::::<>CanvasLayer<>::
 music_player_widget.gd::GDScript::-1::1728156730::0::1::::<>Node<>::
+pause_menu.gd::GDScript::-1::1728159823::0::1::::<>CanvasLayer<>::
 ::res://Scripts/Units/::1728133113
-::res://Scripts/Units/Enemies/::1728156682
-animated_sprite.gd::GDScript::-1::1728146542::0::1::::<>AnimatedSprite2D<>::
-enemies.gd::GDScript::-1::1728147041::0::1::::<>Node2D<>::
-enemy.gd::GDScript::-1::1728156682::0::1::::<>Node2D<>::
-::res://Scripts/Units/Projectiles/::1728133113
-potato.gd::GDScript::-1::1728133113::0::1::::<>Node2D<>::
+::res://Scripts/Units/Enemies/::1728163548
+animated_sprite.gd::GDScript::-1::1728160921::0::1::::<>AnimatedSprite2D<>::
+enemies.gd::GDScript::-1::1728160921::0::1::::<>Node2D<>::
+enemy.gd::GDScript::-1::1728163548::0::1::::<>Node2D<>::
+::res://Scripts/Units/Projectiles/::1728164833
+potato.gd::GDScript::-1::1728164833::0::1::::<>Node2D<>::
 ::res://Scripts/Units/Scrotes/::1728119945
 scrote.gd::GDScript::-1::1728119945::0::1::::<>RigidBody2D<>::
-::res://Scripts/Units/Turrets/::1728133638
-turret.gd::GDScript::-1::1728133113::0::1::::<>Node2D<>::
-turret_sprite.gd::GDScript::-1::1728133638::0::1::::<>AnimatedSprite2D<>::
-::res://Songs/::1728156730
+::res://Scripts/Units/Turrets/::1728163844
+turret.gd::GDScript::-1::1728163844::0::1::::<>Node2D<>::
+turret_sprite.gd::GDScript::-1::1728160921::0::1::::<>AnimatedSprite2D<>::
+::res://Shaders/::1728159823
+blur.gdshader::Shader::-1::1728159823::0::1::::<><>::
+::res://Songs/::1728156734
 Cowboy Scrote.mp3::AudioStreamMP3::3920306918266354119::1728156730::1728156734::1::::<><>::
 Protein vs Carbs (50's).mp3::AudioStreamMP3::5316180626964602504::1728153307::1728153336::1::::<><>::
 Protein vs Carbs (Country).mp3::AudioStreamMP3::1650106314108769228::1728153307::1728153336::1::::<><>::
@@ -96,9 +100,9 @@ Scrotus.mp3::AudioStreamMP3::8057995433585313843::1728156730::1728156734::1::::<
 ::res://Structures/::1728153308
 ::res://Structures/Walls/::1728153308
 MeatWall.tscn::PackedScene::8843270574233772131::1728153308::0::1::::<><>::uid://c1vfb2cwi0snu::::res://Art/Map/Walls/bonewalltile.png
-::res://Unit/::1728156694
-Enemy.tscn::PackedScene::445687491135679862::1728156694::0::1::::<><>::res://Scripts/Units/Enemies/enemy.gd<>uid://c4okcpbsryxyl::::res://Art/Units/Enemies/Enemy1SpriteSheet-Sheet.png
-Potato.tscn::PackedScene::4885556375571705219::1728134798::0::1::::<><>::uid://dfvyfhr5dj8f7::::res://Art/Units/Projectiles/potato.png<>res://Scripts/Units/Projectiles/potato.gd
+::res://Unit/::1728164837
+Enemy.tscn::PackedScene::445687491135679862::1728164837::0::1::::<><>::res://Scripts/Units/Enemies/enemy.gd<>uid://c4okcpbsryxyl::::res://Art/Units/Enemies/Enemy1SpriteSheet-Sheet.png<>res://Scripts/Units/Enemies/animated_sprite.gd
+Potato.tscn::PackedScene::4885556375571705219::1728164837::0::1::::<><>::uid://dfvyfhr5dj8f7::::res://Art/Units/Projectiles/potato.png<>res://Scripts/Units/Projectiles/potato.gd
 Scrote.tscn::PackedScene::8502843768961614845::1728119945::0::1::::<><>::res://Scripts/Units/Scrotes/scrote.gd<>uid://cramueyj2h0ec::::res://Art/Units/Scrotes/ScroatJenkins.png
 Turret.tscn::PackedScene::4904117696983421295::1728134798::0::1::::<><>::res://Scripts/Units/Turrets/turret.gd<>uid://cbuunucqe7au2::::res://Unit/Potato.tscn<>uid://c4pict7glk3hc::::res://Art/Units/Turrets/Turret1-Sheet.png<>res://Scripts/Units/Turrets/turret_sprite.gd
 ::res://Unit/Spawners/::1728153308

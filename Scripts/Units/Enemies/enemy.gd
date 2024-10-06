@@ -1,10 +1,14 @@
-extends Node2D
+extends Area2D
 
 @onready var sprite = $AnimatedSprite2D  # Assuming the sprite is a child of the Node2D
 var target_position: Vector2 = Vector2.ZERO
 @export var speed: float = 100.0
+@export var health: int = 5
 
 func _process(delta: float):
+	if health <= 0:
+		queue_free()
+	
 	# Calculate the direction to the mouse position
 	var direction = (target_position - position).normalized()
 
@@ -18,5 +22,5 @@ func _process(delta: float):
 		sprite.flip_h = false  # Ensure it's not flipped if moving right
 
 	# Optionally, free the enemy when it reaches the target (to prevent it from moving indefinitely)
-	if position.distance_to(target_position) < 10:
-		queue_free()
+	# if position.distance_to(target_position) < 10:
+	# 	queue_free()

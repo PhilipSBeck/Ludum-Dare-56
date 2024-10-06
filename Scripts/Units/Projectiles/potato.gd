@@ -1,10 +1,29 @@
-extends Node2D
+extends Area2D
 
-var velocity = Vector2.ZERO
-@export var speed = 500.0
+@export var target: Node2D = null
+var last_pos: Vector2 = Vector2(0, 0)
+@export var speed: float = 100.0
+var spin_speed: float = 0
+var damage: int = 1
 
-func _process(delta):
-	position += velocity * delta
+func _ready():
+	target = get_parent().get_target()
+	last_pos = target.position
+	spin_speed = randf_range(-10, 10)
+
+func _process(delta: float):
+	if target and is_instance_valid(target):
+		last_pos = target.position
 	
-	if position.x < -1000 or position.x > get_viewport_rect().size.x or position.y < -1000 or position.y > get_viewport_rect().size.y:
+	var direction = (last_pos - global_position).normalized()
+	position += direction * speed * delta
+	rotation += spin_speed * delta
+	# rotation = direction.angle()
+	
+	# Optional: Remove the potato if it reaches its target
+	print(global_position.distance_to(last_pos))
+	if global_position.distance_to(last_pos) < 10:
+		if target and is_instance_valid(target):
+			target.health -= damage
 		queue_free()
+		
