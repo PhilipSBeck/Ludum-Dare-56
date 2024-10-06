@@ -2,6 +2,7 @@ extends CanvasLayer
 
 signal towerSelected
 signal turretSelected
+signal houseSelected
 
 var meat: int = 200
 var skin: int = 200
@@ -50,10 +51,19 @@ func _on_turret_place_btn_mouse_exited() -> void:
 	$Hotbar/TurretPlaceBtn/Selector.visible = false
 	$Hotbar/SelectedIcon.text = ""
 
+func _on_house_place_btn_mouse_entered() -> void:
+	$Hotbar/HousePlaceBtn/Selector.visible = true
+	$Hotbar/SelectedIcon.text = $Hotbar/HousePlaceBtn.get_meta("type")
+
+func _on_house_place_btn_mouse_exited() -> void:
+	$Hotbar/HousePlaceBtn/Selector.visible = false
+	$Hotbar/SelectedIcon.text = ""
 
 func _on_turret_place_btn_pressed() -> void:
 	turretSelected.emit()
 
-
 func _on_tower_place_btn_pressed() -> void:
 	towerSelected.emit()
+
+func _on_house_place_btn_pressed() -> void:
+	houseSelected.emit()

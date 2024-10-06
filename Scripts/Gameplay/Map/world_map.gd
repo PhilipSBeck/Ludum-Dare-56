@@ -19,7 +19,8 @@ func _ready() -> void:
 	var tile_size = tile_set.tile_size
 	for i in no_of_spawners:
 		var spawner = spawner_scene.instantiate()
-		var pos = Vector2(randf_range(0,100)-50, randf_range(0,100)-50)*Vector2(tile_size)
+		var pos = Vector2(randi_range(0,100)-50, randi_range(0,100)-50)
+		pos*=Vector2(tile_size)
 		#while check_if_spawner_already_at_pos(pos):
 		#	pos = Vector2(randf_range(0,100), randf_range(0,100))*Vector2(tile_size)
 		
