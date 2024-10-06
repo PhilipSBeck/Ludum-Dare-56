@@ -49,13 +49,23 @@ func spawn_enemy(pos: Vector2):
 	enemy.on_death.connect(on_death_of_enemy)
 
 func set_target(enemy) -> void:
+	if !enemy or !is_instance_valid(enemy):
+		return
+	
 	var closest_wall = null
 	var closest = 99999999
 	
 	var main = get_parent()
 	var walls = []
 	
+	if !main or !is_instance_valid(main):
+		return
+	
 	for key in main.building_dictionary:
+		var wall = main.building_dictionary[key]
+		if !wall or !is_instance_valid(wall):
+			continue
+			
 		if main.building_dictionary[key].building_type != "MeatWall":
 			continue
 		walls.append(key)
@@ -69,6 +79,7 @@ func set_target(enemy) -> void:
 			closest_wall = main.building_dictionary[wall]
 			
 	if closest_wall:
+		enemy.target = closest_wall
 		enemy.target_position = closest_wall.position
 
 func get_random_edge_position() -> Vector2:

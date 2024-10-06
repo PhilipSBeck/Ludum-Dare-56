@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://gl5n4qwltrfa"]
 
 [ext_resource type="Script" path="res://Scripts/Units/Enemies/enemy.gd" id="1_l1aak"]
-[ext_resource type="SpriteFrames" uid="uid://brxkv2pvc2qhu" path="res://Art/Units/Enemies/EnemySpriteFrames.tres" id="2_smxok"]
+[ext_resource type="SpriteFrames" uid="uid://cooedice4wffq" path="res://Art/Units/Enemies/EnemySpriteFrames.tres" id="2_smxok"]
 [ext_resource type="Script" path="res://Scripts/Units/Enemies/animated_sprite.gd" id="3_qh4b0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l3kj4"]
