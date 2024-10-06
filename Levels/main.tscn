@@ -39,6 +39,7 @@ enemy_scene = ExtResource("8_yb52r")
 
 [node name="Spawners" type="Node2D" parent="."]
 
+[connection signal="houseSelected" from="MainHud" to="." method="_on_main_hud_house_selected"]
 [connection signal="towerSelected" from="MainHud" to="." method="_on_main_hud_tower_selected"]
 [connection signal="turretSelected" from="MainHud" to="." method="_on_main_hud_turret_selected"]
 [connection signal="increase_resources" from="Enemies" to="." method="_on_enemies_increase_resources"]

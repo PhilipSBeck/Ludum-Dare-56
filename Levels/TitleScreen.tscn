@@ -36,6 +36,7 @@ tile_set = SubResource("TileSet_n5gfx")
 
 [node name="SpawningPool" parent="." instance=ExtResource("4_whn0m")]
 position = Vector2(286, 234)
+script = null
 
 [node name="Scrote" parent="." instance=ExtResource("5_8dhs3")]
 position = Vector2(805, 437)

@@ -1,0 +1,68 @@
+[gd_scene load_steps=11 format=3 uid="uid://b3a4r77v0lyc1"]
+
+[ext_resource type="Script" path="res://Scripts/Structures/scrote_house.gd" id="1_3fp61"]
+[ext_resource type="Texture2D" uid="uid://42alb52alm52" path="res://Art/Units/Spawners/ScroteSpawner-Sheet.png" id="1_5s2wr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_31ymk"]
+atlas = ExtResource("1_5s2wr")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_efiur"]
+atlas = ExtResource("1_5s2wr")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0djsa"]
+atlas = ExtResource("1_5s2wr")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m3sjq"]
+atlas = ExtResource("1_5s2wr")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_orfgg"]
+atlas = ExtResource("1_5s2wr")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ugyp"]
+atlas = ExtResource("1_5s2wr")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eal2l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_31ymk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_efiur")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0djsa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m3sjq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_orfgg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ugyp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d5otm"]
+
+[node name="ScroteHouse" type="Area2D"]
+script = ExtResource("1_3fp61")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_eal2l")
+autoplay = "default"
+frame_progress = 0.201001
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(5, 5)
+shape = SubResource("RectangleShape2D_d5otm")

@@ -2,6 +2,7 @@ extends Node
 
 var placing_tiles = false
 var placing_turrets = false
+var placing_houses = false
 
 const WALL_PRICE_BONE = 30
 const WALL_PRICE_MEAT = 50
@@ -11,8 +12,13 @@ const TURRET_PRICE_BONE = 45
 const TURRET_PRICE_MEAT = 25
 const TURRET_PRICE_SKIN = 0
 
+const HOUSE_PRICE_BONE = 10
+const HOUSE_PRICE_MEAT = 10
+const HOUSE_PRICE_SKIN = 50
+
 const MEAT_WALL = preload("res://Structures/Walls/MeatWall.tscn")
 const TURRET = preload("res://Unit/Turret.tscn")
+const HOUSE = preload("res://Unit/Spawners/ScroteHouse.tscn")
 
 #TODO: Change these values
 const SKIN_GAINED = 10
@@ -42,11 +48,15 @@ func _process(delta: float) -> void:
 	if placing_tiles and Input.is_action_just_pressed("ui_cancel"):
 		set_placing_tiles(false)
 		placing_turrets = false
+		placing_houses = false#
+	
 	if Input.is_action_just_pressed("ui_click"):
 		if placing_tiles:
 			attempt_place_fortress()
 		elif placing_turrets:
-			attempt_place_turret()
+			attempt_place_building(TURRET, TURRET_PRICE_BONE, TURRET_PRICE_SKIN, TURRET_PRICE_MEAT, true)
+		elif placing_houses:
+			attempt_place_building(HOUSE, HOUSE_PRICE_BONE, HOUSE_PRICE_SKIN, HOUSE_PRICE_MEAT)
 
 func get_fortress_corner_from_map_pos(mapPos: Vector2i):
 	return (mapPos - (mapPos % 5))
@@ -83,30 +93,34 @@ func attempt_place_fortress():
 	check_wall_adjecency()
 	set_placing_tiles(false)
 
-func attempt_place_turret():
+func attempt_place_building(building_resource: Resource, bone_price: float, skin_price: float, meat_price: float, is_turret: bool = false):
 	var mousePos = $TileMapLayer.get_global_mouse_position()
 	var mapPos =  $TileMapLayer.local_to_map(mousePos)
 	
 	if building_dictionary.has(mapPos):
 		return
-
+		
 	if $TileMapLayer.get_cell_atlas_coords(mapPos) != Vector2i(0,0):
 		return
-	if $MainHud.bones < TURRET_PRICE_BONE:
+	if $MainHud.bones < bone_price:
 		return
-	if $MainHud.meat < TURRET_PRICE_MEAT:
+	if $MainHud.meat < meat_price:
 		return
-	if $MainHud.skin < TURRET_PRICE_SKIN:
+	if $MainHud.skin < skin_price:
 		return
 		
-	$MainHud.increase_bones(-TURRET_PRICE_BONE)
-	$MainHud.increase_meat(-TURRET_PRICE_MEAT)
-	$MainHud.increase_skin(-TURRET_PRICE_SKIN)
+	$MainHud.increase_bones(-bone_price)
+	$MainHud.increase_meat(-meat_price)
+	$MainHud.increase_skin(-skin_price)
 	
-	var turret = TURRET.instantiate()
-	turret.position = $TileMapLayer.map_to_local(mapPos)
-	$Turrets.add_child(turret)
-	building_dictionary[turret.position] = turret
+	var building = building_resource.instantiate()
+	building.position = $TileMapLayer.map_to_local(mapPos)
+	if(is_turret):
+		$Turrets.add_child(building)
+	else:
+		add_child(building)
+		
+	building_dictionary[building.position] = building
 
 func check_wall_adjecency():
 	var walls_to_destroy = []
@@ -137,8 +151,8 @@ func set_placing_tiles(in_placing_tiles: bool):
 
 func _on_main_hud_tower_selected() -> void:
 	set_placing_tiles(!placing_tiles)
-	placing_turrets = false;
-
+	placing_turrets = false
+	placing_houses = false
 
 func _on_pause_menu_quit_to_main() -> void:
 	queue_free()
@@ -146,9 +160,13 @@ func _on_pause_menu_quit_to_main() -> void:
 
 func _on_main_hud_turret_selected() -> void:
 	set_placing_tiles(false)
-	placing_turrets = true;
-	pass
+	placing_turrets = true
+	placing_houses = false	
 
+func _on_main_hud_house_selected() -> void:
+	set_placing_tiles(false)
+	placing_turrets = false
+	placing_houses = true
 
 func _on_enemies_increase_resources() -> void:
 	$MainHud.increase_bones(BONES_GAINED)
