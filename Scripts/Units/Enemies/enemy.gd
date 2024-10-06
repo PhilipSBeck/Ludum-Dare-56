@@ -6,6 +6,9 @@ signal on_death
 var target_position: Vector2 = Vector2.ZERO
 @export var speed: float = 100.0
 @export var health: int = 5
+@export var target: Node2D = null
+var time_since_reaching_target = 0.0
+var damage_dealt = 0
 
 func _process(delta: float):
 	if health <= 0:
@@ -23,6 +26,13 @@ func _process(delta: float):
 	var height = collision_y * $AnimatedSprite2D.scale.y + 64
 	
 	if dist_x < width and dist_y < height:
+		# Damage the targetted wall as enemy is touching
+		if target and is_instance_valid(target):
+			time_since_reaching_target += delta
+			if time_since_reaching_target - damage_dealt >= 1.0:
+				damage_dealt += 1
+				target.health -= 1
+		
 		return
 	
 	# Calculate the direction to the mouse position

@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=7 format=3 uid="uid://brxkv2pvc2qhu"]
+[gd_resource type="SpriteFrames" load_steps=7 format=3 uid="uid://cooedice4wffq"]
 
 [ext_resource type="Texture2D" uid="uid://c4okcpbsryxyl" path="res://Art/Units/Enemies/Enemy1SpriteSheet-Sheet.png" id="1_qgeih"]
 [ext_resource type="Texture2D" uid="uid://vf82l3i27d3u" path="res://Art/Units/Enemies/Enemy2-Sheet.png" id="2_lev0v"]
