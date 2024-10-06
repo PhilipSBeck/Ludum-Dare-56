@@ -19,6 +19,7 @@ const SKIN_GAINED = 10
 const BONES_GAINED = 10
 const MEAT_GAINED = 10
 
+
 var building_dictionary = {}
 
 func UpdateHighlight():
@@ -115,6 +116,8 @@ func check_wall_adjecency():
 		var wall = building_dictionary[key]
 		building_dictionary.erase(key)
 		wall.queue_free()
+		$MainHud.increase_bones(randi_range(0,2))
+		$MainHud.increase_meat(randi_range(0,2))
 
 func set_placing_tiles(in_placing_tiles: bool):
 	placing_tiles = in_placing_tiles
