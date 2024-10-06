@@ -94,8 +94,8 @@ func attempt_place_fortress():
 	set_placing_tiles(false)
 	
 	
-	var fortress_min = Vector2(mapPos)+Vector2(50.0, 50.0)
-	var fortress_max = Vector2(mapPos)+Vector2(5,5)+Vector2(50.0, 50.0)
+	var fortress_min = Vector2(mapPos)
+	var fortress_max = Vector2(mapPos)+Vector2(5,5)
 	delete_spawner_here(Rect2(fortress_min, fortress_max))
 	
 	
@@ -186,8 +186,8 @@ func delete_spawner_here(bounds: Rect2) -> void:
 	for spawner in spawners:
 		var spawner_col_shape: CollisionShape2D = spawner.get_node("CollisionShape2D")
 		var spawner_scale = spawner_col_shape.scale*0.5
-		var spawner_bounds_min = (spawner.position/128.0)-Vector2(2, 1)+Vector2(50.0, 50.0)
-		var spawner_bounds_max = (spawner.position/128.0)+Vector2(2, 1)+Vector2(50.0, 50.0)
+		var spawner_bounds_min = (spawner.position/128.0)-Vector2(2, 1)
+		var spawner_bounds_max = (spawner.position/128.0)+Vector2(2, 1)
 		
 		var spawner_bounds = Rect2(spawner_bounds_min, spawner_bounds_max)
 		
