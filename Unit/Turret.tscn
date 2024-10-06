@@ -34,7 +34,6 @@ potato_scene = ExtResource("2_4r1ix")
 
 [node name="TurretSprite" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1.43051e-06, -1.43051e-06)
-scale = Vector2(0.15625, 0.152344)
 sprite_frames = SubResource("SpriteFrames_cdi07")
 frame_progress = 0.622198
 script = ExtResource("4_kynfe")

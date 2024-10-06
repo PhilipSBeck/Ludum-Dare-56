@@ -4,6 +4,8 @@ extends Node2D
 @export var fire_rate: float = 0.3
 @export var projectile_speed: float = 1000.0
 
+@export var building_type = "Turret"
+
 var last_shot_time: float = 0.0
 
 func _process(delta: float):

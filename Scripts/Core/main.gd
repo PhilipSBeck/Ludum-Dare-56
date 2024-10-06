@@ -51,8 +51,13 @@ func _process(delta: float) -> void:
 func get_fortress_corner_from_map_pos(mapPos: Vector2i):
 	return (mapPos - (mapPos % 5))
 	
-func attempt_place_fortress():
-	#TODO check to make sure fortress isn't being added to existing fortress
+func attempt_place_fortress():	
+	var mousePos = $TileMapLayer.get_global_mouse_position()
+	var mapPos =  $TileMapLayer.local_to_map(mousePos)
+	
+	# Make sure there isn't already a fortress there
+	if $TileMapLayer.get_cell_atlas_coords(mapPos) == Vector2i(0,0):
+		return
 	
 	if $MainHud.bones < WALL_PRICE_BONE:
 		return
@@ -64,9 +69,6 @@ func attempt_place_fortress():
 	$MainHud.increase_meat(-WALL_PRICE_MEAT)
 	$MainHud.increase_skin(-WALL_PRICE_SKIN)
 	
-	# TODO this should also add walls and cost something
-	var mousePos = $TileMapLayer.get_global_mouse_position()
-	var mapPos =  $TileMapLayer.local_to_map(mousePos)
 	mapPos = get_fortress_corner_from_map_pos(mapPos)
 	for i in 5:
 		for j in 5:
@@ -79,10 +81,14 @@ func attempt_place_fortress():
 					building_dictionary[tilePos] = wall
 					add_child(wall)
 	check_wall_adjecency()
+	set_placing_tiles(false)
 
 func attempt_place_turret():
 	var mousePos = $TileMapLayer.get_global_mouse_position()
 	var mapPos =  $TileMapLayer.local_to_map(mousePos)
+	
+	if building_dictionary.has(mapPos):
+		return
 
 	if $TileMapLayer.get_cell_atlas_coords(mapPos) != Vector2i(0,0):
 		return
@@ -100,10 +106,13 @@ func attempt_place_turret():
 	var turret = TURRET.instantiate()
 	turret.position = $TileMapLayer.map_to_local(mapPos)
 	$Turrets.add_child(turret)
+	building_dictionary[turret.position] = turret
 
 func check_wall_adjecency():
 	var walls_to_destroy = []
 	for key in building_dictionary:
+		if building_dictionary[key].building_type != "MeatWall":
+			continue
 		var to_keep = false;
 		for i in 3:
 			for j in 3:

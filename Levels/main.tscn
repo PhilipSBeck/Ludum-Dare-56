@@ -22,7 +22,6 @@ script = ExtResource("1_qvoxn")
 [node name="Turrets" type="Node2D" parent="."]
 
 [node name="Turret" parent="Turrets" instance=ExtResource("3_i0156")]
-scale = Vector2(5, 5)
 
 [node name="TileHighlight" type="Sprite2D" parent="."]
 position = Vector2(190, 320)
