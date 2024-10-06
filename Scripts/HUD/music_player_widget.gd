@@ -1,13 +1,16 @@
 extends Node
 
 @export var songs: Array[AudioStream]
+@export var randomize_start = false
 
 var currentSong: AudioStream
 var currentSongIdx: int = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	#currentSongIdx = randi_range(0, songs.size()-1)
+	if randomize_start:
+		currentSongIdx = randi_range(0, songs.size()-1)
+	
 	currentSong = songs[currentSongIdx]
 	$AudioStreamPlayer.stream = currentSong
 	$AudioStreamPlayer.play()
