@@ -2,7 +2,7 @@ extends Area2D
 
 @export var target: Node2D = null
 var last_pos: Vector2 = Vector2(0, 0)
-@export var speed: float = 250.0
+@export var speed: float = 1000.0
 var spin_speed: float = 0
 var damage: int = 1
 

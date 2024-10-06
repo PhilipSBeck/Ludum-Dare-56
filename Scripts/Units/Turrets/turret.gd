@@ -2,8 +2,9 @@ extends Node2D
 
 @export var potato_scene: PackedScene
 @export var fire_rate: float = 0.3
-@export var projectile_speed: float = 1000.0
+@export var projectile_speed: float = 250.0
 @export var target: Node2D = null
+const MAX_RANGE: float = 1200.0
 
 @export var building_type = "Turret"
 
@@ -12,6 +13,9 @@ var last_shot_time: float = 0.0
 func _process(delta: float):
 	last_shot_time += delta
 	target = get_target()
+	var dist = (target.position - position).length_squared()
+	if dist > MAX_RANGE * MAX_RANGE:
+		return
 
 	if target != null and last_shot_time >= fire_rate:
 		shoot_potato()
