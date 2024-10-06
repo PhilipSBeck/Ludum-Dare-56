@@ -8,6 +8,10 @@ const ZOOM_MULTIPIER: float = 1.2
 const MAX_ZOOM: float = 5
 const MIN_ZOOM: float = 0.2
 
+func _ready() -> void:
+	# hardcoded half the size of the map
+	position = Vector2(6400, 6400)
+	
 func _process(delta: float):
 	var movement := Vector2.ZERO
 

@@ -1,30 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://gl5n4qwltrfa"]
+[gd_scene load_steps=5 format=3 uid="uid://gl5n4qwltrfa"]
 
 [ext_resource type="Script" path="res://Scripts/Units/Enemies/enemy.gd" id="1_l1aak"]
-[ext_resource type="Texture2D" uid="uid://c4okcpbsryxyl" path="res://Art/Units/Enemies/Enemy1SpriteSheet-Sheet.png" id="1_rlqyn"]
+[ext_resource type="SpriteFrames" uid="uid://cooedice4wffq" path="res://Art/Units/Enemies/EnemySpriteFrames.tres" id="2_smxok"]
 [ext_resource type="Script" path="res://Scripts/Units/Enemies/animated_sprite.gd" id="3_qh4b0"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_krk1y"]
-atlas = ExtResource("1_rlqyn")
-region = Rect2(0, 0, 128, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lhv0a"]
-atlas = ExtResource("1_rlqyn")
-region = Rect2(128, 0, 128, 128)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_fpjwx"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_krk1y")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lhv0a")
-}],
-"loop": true,
-"name": &"walk",
-"speed": 3.0
-}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l3kj4"]
 size = Vector2(133.333, 106.667)
@@ -36,9 +14,8 @@ metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_fpjwx")
-animation = &"walk"
-frame_progress = 0.273819
+sprite_frames = ExtResource("2_smxok")
+animation = &"Enemy2"
 script = ExtResource("3_qh4b0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

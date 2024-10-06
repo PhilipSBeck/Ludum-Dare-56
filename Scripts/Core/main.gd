@@ -29,6 +29,7 @@ const MEAT_GAINED = 10
 const MAX_ENEMIES = 200
 @export var total_enemies = 0
 
+@export var game_over = false
 
 var building_dictionary = {}
 
@@ -135,7 +136,7 @@ func attempt_place_building(building_resource: Resource, bone_price: float, skin
 		add_child(building)
 		$Camera2D/HouseNoise.play()
 		
-	building_dictionary[building.position] = building
+	building_dictionary[mapPos] = building
 
 func check_wall_adjecency():
 	var walls_to_destroy = []
