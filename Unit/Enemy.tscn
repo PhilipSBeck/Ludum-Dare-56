@@ -1,8 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://gl5n4qwltrfa"]
+[gd_scene load_steps=7 format=3 uid="uid://gl5n4qwltrfa"]
 
 [ext_resource type="Script" path="res://Scripts/Units/Enemies/enemy.gd" id="1_l1aak"]
-[ext_resource type="PackedScene" uid="uid://dm08jyntffag0" path="res://HUD/HealthBar.tscn" id="2_8d77b"]
-[ext_resource type="SpriteFrames" uid="uid://cooedice4wffq" path="res://Art/Units/Enemies/EnemySpriteFrames.tres" id="2_smxok"]
+[ext_resource type="PackedScene" path="res://HUD/HealthBar.tscn" id="2_8d77b"]
+[ext_resource type="SpriteFrames" uid="uid://brxkv2pvc2qhu" path="res://Art/Units/Enemies/EnemySpriteFrames.tres" id="2_smxok"]
 [ext_resource type="Script" path="res://Scripts/Units/Enemies/animated_sprite.gd" id="3_qh4b0"]
 [ext_resource type="AudioStream" uid="uid://c6qepgl7p5iru" path="res://Sound/HitWall.wav" id="4_mpfb8"]
 
@@ -24,7 +24,8 @@ scale = Vector2(0.479484, 0.728204)
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.3, 0.3)
 sprite_frames = ExtResource("2_smxok")
-animation = &"Enemy2"
+animation = &"Enemy3"
+frame_progress = 0.191317
 script = ExtResource("3_qh4b0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
