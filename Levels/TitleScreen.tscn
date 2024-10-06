@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=4 uid="uid://cmrxi8qfrseay"]
+[gd_scene load_steps=10 format=4 uid="uid://cmrxi8qfrseay"]
 
 [ext_resource type="Texture2D" uid="uid://bsnnnedb70g0f" path="res://Art/Map/Floor/TileSet.png" id="1_ioi34"]
 [ext_resource type="Script" path="res://Scripts/Core/title_screen.gd" id="1_x8bk8"]
 [ext_resource type="PackedScene" uid="uid://7tv84aj5tbti" path="res://HUD/TitleScreenHud.tscn" id="2_wppsg"]
 [ext_resource type="PackedScene" uid="uid://cm2wx2hxyu6m8" path="res://Unit/Spawners/SpawningPool.tscn" id="4_whn0m"]
 [ext_resource type="PackedScene" uid="uid://dte3uhl6ck5hh" path="res://Unit/Scrote.tscn" id="5_8dhs3"]
+[ext_resource type="SpriteFrames" uid="uid://brxkv2pvc2qhu" path="res://Art/Units/Enemies/EnemySpriteFrames.tres" id="6_jnlr0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5n3a6"]
 texture = ExtResource("1_ioi34")
@@ -40,6 +41,27 @@ script = null
 
 [node name="Scrote" parent="." instance=ExtResource("5_8dhs3")]
 position = Vector2(805, 437)
+
+[node name="Enemy" type="AnimatedSprite2D" parent="."]
+position = Vector2(189, 503)
+scale = Vector2(0.7, 0.7)
+sprite_frames = ExtResource("6_jnlr0")
+animation = &"Enemy2"
+autoplay = "Enemy2"
+
+[node name="Enemy2" type="AnimatedSprite2D" parent="."]
+position = Vector2(73, 407)
+scale = Vector2(0.7, 0.7)
+sprite_frames = ExtResource("6_jnlr0")
+animation = &"Enemy1"
+autoplay = "Enemy1"
+
+[node name="Enemy3" type="AnimatedSprite2D" parent="."]
+position = Vector2(982, 236)
+scale = Vector2(-0.7, 0.7)
+sprite_frames = ExtResource("6_jnlr0")
+animation = &"Enemy2"
+autoplay = "Enemy2"
 
 [connection signal="quit_button_pressed" from="TitleScreen" to="." method="_on_title_screen_quit_button_pressed"]
 [connection signal="start_button_pressed" from="TitleScreen" to="." method="_on_title_screen_start_button_pressed"]
