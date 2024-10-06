@@ -23,3 +23,7 @@ func _process(delta: float) -> void:
 			print("OH NOOOOO")
 		
 		queue_free()
+
+func addHealth(healAmount: float):
+	health = min(MAX_HEALTH, health + healAmount)
+	return health == MAX_HEALTH

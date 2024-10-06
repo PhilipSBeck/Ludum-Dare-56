@@ -106,6 +106,7 @@ position = Vector2(0, 1)
 shape = SubResource("CircleShape2D_xifym")
 
 [node name="WaitTimer" type="Timer" parent="."]
+wait_time = 5.0
 one_shot = true
 
 [node name="RepathTimer" type="Timer" parent="."]
