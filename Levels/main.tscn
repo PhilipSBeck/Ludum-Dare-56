@@ -22,7 +22,6 @@ script = ExtResource("1_qvoxn")
 [node name="Turrets" type="Node2D" parent="."]
 
 [node name="Turret" parent="Turrets" instance=ExtResource("3_i0156")]
-scale = Vector2(5, 5)
 
 [node name="TileHighlight" type="Sprite2D" parent="."]
 position = Vector2(190, 320)
@@ -37,4 +36,6 @@ enemy_scene = ExtResource("8_yb52r")
 [node name="PauseMenu" parent="." instance=ExtResource("7_j0glq")]
 
 [connection signal="towerSelected" from="MainHud" to="." method="_on_main_hud_tower_selected"]
+[connection signal="turretSelected" from="MainHud" to="." method="_on_main_hud_turret_selected"]
+[connection signal="increase_resources" from="Enemies" to="." method="_on_enemies_increase_resources"]
 [connection signal="quit_to_main" from="PauseMenu" to="." method="_on_pause_menu_quit_to_main"]

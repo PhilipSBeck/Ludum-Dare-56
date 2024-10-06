@@ -1,12 +1,24 @@
 extends Node
 
 var placing_tiles = false
+var placing_turrets = false
 
 const WALL_PRICE_BONE = 30
 const WALL_PRICE_MEAT = 50
 const WALL_PRICE_SKIN = 12
 
+const TURRET_PRICE_BONE = 45
+const TURRET_PRICE_MEAT = 25
+const TURRET_PRICE_SKIN = 0
+
 const MEAT_WALL = preload("res://Structures/Walls/MeatWall.tscn")
+const TURRET = preload("res://Unit/Turret.tscn")
+
+#TODO: Change these values
+const SKIN_GAINED = 10
+const BONES_GAINED = 10
+const MEAT_GAINED = 10
+
 
 var building_dictionary = {}
 
@@ -29,13 +41,24 @@ func _process(delta: float) -> void:
 	
 	if placing_tiles and Input.is_action_just_pressed("ui_cancel"):
 		set_placing_tiles(false)
-	if placing_tiles and Input.is_action_just_pressed("ui_click"):
-		attempt_place_fortress()
+		placing_turrets = false
+	if Input.is_action_just_pressed("ui_click"):
+		if placing_tiles:
+			attempt_place_fortress()
+		elif placing_turrets:
+			attempt_place_turret()
 
 func get_fortress_corner_from_map_pos(mapPos: Vector2i):
 	return (mapPos - (mapPos % 5))
 	
-func attempt_place_fortress():
+func attempt_place_fortress():	
+	var mousePos = $TileMapLayer.get_global_mouse_position()
+	var mapPos =  $TileMapLayer.local_to_map(mousePos)
+	
+	# Make sure there isn't already a fortress there
+	if $TileMapLayer.get_cell_atlas_coords(mapPos) == Vector2i(0,0):
+		return
+	
 	if $MainHud.bones < WALL_PRICE_BONE:
 		return
 	if $MainHud.meat < WALL_PRICE_MEAT:
@@ -46,9 +69,6 @@ func attempt_place_fortress():
 	$MainHud.increase_meat(-WALL_PRICE_MEAT)
 	$MainHud.increase_skin(-WALL_PRICE_SKIN)
 	
-	# TODO this should also add walls and cost something
-	var mousePos = $TileMapLayer.get_global_mouse_position()
-	var mapPos =  $TileMapLayer.local_to_map(mousePos)
 	mapPos = get_fortress_corner_from_map_pos(mapPos)
 	for i in 5:
 		for j in 5:
@@ -61,10 +81,38 @@ func attempt_place_fortress():
 					building_dictionary[tilePos] = wall
 					add_child(wall)
 	check_wall_adjecency()
+	set_placing_tiles(false)
+
+func attempt_place_turret():
+	var mousePos = $TileMapLayer.get_global_mouse_position()
+	var mapPos =  $TileMapLayer.local_to_map(mousePos)
+	
+	if building_dictionary.has(mapPos):
+		return
+
+	if $TileMapLayer.get_cell_atlas_coords(mapPos) != Vector2i(0,0):
+		return
+	if $MainHud.bones < TURRET_PRICE_BONE:
+		return
+	if $MainHud.meat < TURRET_PRICE_MEAT:
+		return
+	if $MainHud.skin < TURRET_PRICE_SKIN:
+		return
+		
+	$MainHud.increase_bones(-TURRET_PRICE_BONE)
+	$MainHud.increase_meat(-TURRET_PRICE_MEAT)
+	$MainHud.increase_skin(-TURRET_PRICE_SKIN)
+	
+	var turret = TURRET.instantiate()
+	turret.position = $TileMapLayer.map_to_local(mapPos)
+	$Turrets.add_child(turret)
+	building_dictionary[turret.position] = turret
 
 func check_wall_adjecency():
 	var walls_to_destroy = []
 	for key in building_dictionary:
+		if building_dictionary[key].building_type != "MeatWall":
+			continue
 		var to_keep = false;
 		for i in 3:
 			for j in 3:
@@ -77,6 +125,8 @@ func check_wall_adjecency():
 		var wall = building_dictionary[key]
 		building_dictionary.erase(key)
 		wall.queue_free()
+		$MainHud.increase_bones(randi_range(0,2))
+		$MainHud.increase_meat(randi_range(0,2))
 
 func set_placing_tiles(in_placing_tiles: bool):
 	placing_tiles = in_placing_tiles
@@ -87,7 +137,20 @@ func set_placing_tiles(in_placing_tiles: bool):
 
 func _on_main_hud_tower_selected() -> void:
 	set_placing_tiles(!placing_tiles)
+	placing_turrets = false;
 
 
 func _on_pause_menu_quit_to_main() -> void:
 	queue_free()
+
+
+func _on_main_hud_turret_selected() -> void:
+	set_placing_tiles(false)
+	placing_turrets = true;
+	pass
+
+
+func _on_enemies_increase_resources() -> void:
+	$MainHud.increase_bones(BONES_GAINED)
+	$MainHud.increase_meat(MEAT_GAINED)
+	$MainHud.increase_skin(SKIN_GAINED)

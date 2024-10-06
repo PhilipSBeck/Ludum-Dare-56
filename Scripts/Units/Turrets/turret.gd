@@ -5,6 +5,8 @@ extends Node2D
 @export var projectile_speed: float = 1000.0
 @export var target: Node2D = null
 
+@export var building_type = "Turret"
+
 var last_shot_time: float = 0.0
 
 func _process(delta: float):

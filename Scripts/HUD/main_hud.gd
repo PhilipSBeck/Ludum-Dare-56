@@ -3,9 +3,9 @@ extends CanvasLayer
 signal towerSelected
 signal turretSelected
 
-var meat: int = 100
-var skin: int = 100
-var bones: int = 100
+var meat: int = 200
+var skin: int = 200
+var bones: int = 200
 
 
 # Called when the node enters the scene tree for the first time.
