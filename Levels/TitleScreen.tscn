@@ -41,6 +41,7 @@ script = null
 
 [node name="Scrote" parent="." instance=ExtResource("5_8dhs3")]
 position = Vector2(805, 437)
+script = null
 
 [node name="Enemy" type="AnimatedSprite2D" parent="."]
 position = Vector2(189, 503)
