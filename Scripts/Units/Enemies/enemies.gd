@@ -17,9 +17,6 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	spawn_timer += delta
-	
-	for enemy in get_children():
-		set_target(enemy)
 
 	# Spawn enemies every `spawn_rate` seconds
 	#if spawn_timer >= spawn_rate:

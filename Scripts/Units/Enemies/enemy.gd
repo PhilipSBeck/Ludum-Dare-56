@@ -11,6 +11,19 @@ func _process(delta: float):
 	if health <= 0:
 		on_death.emit()
 		queue_free()
+		
+	var collision_x = $CollisionShape2D.shape.extents.x
+	var collision_y = $CollisionShape2D.shape.extents.y
+	
+	var pos_y = target_position.y + 64
+		
+	var dist_x = abs(target_position.x - position.x)
+	var dist_y = abs(pos_y - position.y)
+	var width = collision_x * $AnimatedSprite2D.scale.x + 64
+	var height = collision_y * $AnimatedSprite2D.scale.y + 64
+	
+	if dist_x < width and dist_y < height:
+		return
 	
 	# Calculate the direction to the mouse position
 	var direction = (target_position - position).normalized()
