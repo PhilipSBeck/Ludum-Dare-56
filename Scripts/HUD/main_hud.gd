@@ -18,7 +18,14 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	pass
+	if Input.is_action_just_pressed("One"):
+		_on_house_place_btn_pressed()
+	if Input.is_action_just_pressed("Two"):
+		_on_tower_place_btn_pressed()
+	if Input.is_action_just_pressed("Three"):
+		_on_turret_place_btn_pressed()
+	
+
 
 
 func increase_meat(amount: int) -> void:
