@@ -22,16 +22,20 @@ func _process(delta: float) -> void:
 		set_target(enemy)
 
 	# Spawn enemies every `spawn_rate` seconds
-	if spawn_timer >= spawn_rate:
-		spawn_enemy()
-		spawn_timer = 0.0
+	#if spawn_timer >= spawn_rate:
+	#	spawn_enemy(Vector2(0,0))
+	#	spawn_timer = 0.0
 		
-func spawn_enemy():
+	for spawner in get_parent().get_node("Spawners").get_children():
+		if spawner.can_spawn():
+			spawn_enemy(spawner.position)
+		
+func spawn_enemy(pos: Vector2):
 	# Create an instance of the enemy scene
 	var enemy = enemy_scene.instantiate()
 
 	# Randomly choose an edge to spawn the enemy
-	var spawn_position = get_random_edge_position()
+	var spawn_position = pos
 
 	# Set the enemy's position at the spawn point
 	enemy.position = spawn_position
