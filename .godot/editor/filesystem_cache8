@@ -1,91 +1,92 @@
 ea4bc82a6ad023ab7ee23ee620429895
-<<<<<<< HEAD
-::res://::1728232607
-icon.svg::CompressedTexture2D::4146542727428341185::1728070469::1728132280::1::::<><>::
+::res://::1728241067
+icon.svg::CompressedTexture2D::4146542727428341185::1728070469::1728241067::1::::<><>::
 README.md::TextFile::-1::1728119582::0::1::::<><>::
 ::res://Art/::1728227501
 ::res://Art/HUD Icons/::1728227950
-boner.png::CompressedTexture2D::3335735067797255316::1728132289::1728132472::1::::<><>::
-HouseIcon.png::CompressedTexture2D::767847211365925936::1728227501::1728227950::1::::<><>::
-meat.png::CompressedTexture2D::1111641773072110602::1728132289::1728132472::1::::<><>::
-Selector.png::CompressedTexture2D::8895848869045321713::1728153307::1728153336::1::::<><>::
-Skin.png::CompressedTexture2D::3210697474819841940::1728132289::1728132472::1::::<><>::
-Tower.png::CompressedTexture2D::5913848116171364316::1728132289::1728132472::1::::<><>::
-turreticon.png::CompressedTexture2D::1774340358111411011::1728153307::1728153336::1::::<><>::
+boner.png::CompressedTexture2D::3335735067797255316::1728132289::1728241067::1::::<><>::
+HouseIcon.png::CompressedTexture2D::767847211365925936::1728227501::1728241067::1::::<><>::
+meat.png::CompressedTexture2D::1111641773072110602::1728132289::1728241067::1::::<><>::
+Selector.png::CompressedTexture2D::8895848869045321713::1728153307::1728241067::1::::<><>::
+Skin.png::CompressedTexture2D::3210697474819841940::1728132289::1728241067::1::::<><>::
+Tower.png::CompressedTexture2D::5913848116171364316::1728132289::1728241067::1::::<><>::
+turreticon.png::CompressedTexture2D::1774340358111411011::1728153307::1728241067::1::::<><>::
 ::res://Art/Map/::1728153307
 ::res://Art/Map/Floor/::1728132473
-MeatTile2.png::CompressedTexture2D::34172514784572578::1728117991::1728132280::1::::<><>::
-TileHighlight.png::CompressedTexture2D::2437995489412251045::1728132289::1728132472::1::::<><>::
-TileSet.png::CompressedTexture2D::3677469531024191127::1728132289::1728132473::1::::<><>::
+MeatTile2.png::CompressedTexture2D::34172514784572578::1728117991::1728241067::1::::<><>::
+TileHighlight.png::CompressedTexture2D::2437995489412251045::1728132289::1728241067::1::::<><>::
+TileSet.png::CompressedTexture2D::3677469531024191127::1728132289::1728241067::1::::<><>::
 ::res://Art/Map/Walls/::1728153336
-bonewalltile.png::CompressedTexture2D::6641410027799373214::1728153307::1728153336::1::::<><>::
-Bonewall_old.png::CompressedTexture2D::8020982885489216401::1728153307::1728153336::1::::<><>::
+bonewalltile.png::CompressedTexture2D::6641410027799373214::1728153307::1728241067::1::::<><>::
+Bonewall_old.png::CompressedTexture2D::8020982885489216401::1728153307::1728241067::1::::<><>::
 ::res://Art/Player/::1728153336
-next hover.png::CompressedTexture2D::757739104641648699::1728153307::1728153336::1::::<><>::
-next pressed.png::CompressedTexture2D::7596878117732580185::1728153307::1728153336::1::::<><>::
-next.png::CompressedTexture2D::4010674228682171426::1728153307::1728153336::1::::<><>::
-pause hover.png::CompressedTexture2D::120415938316044996::1728153307::1728153336::1::::<><>::
-pause pressed.png::CompressedTexture2D::6947402502104932727::1728153307::1728153336::1::::<><>::
-pause.png::CompressedTexture2D::2283556498224375433::1728153307::1728153336::1::::<><>::
-Play hover.png::CompressedTexture2D::7134507261591715619::1728153307::1728153336::1::::<><>::
-Play pressed.png::CompressedTexture2D::603970141688328759::1728153307::1728153336::1::::<><>::
-Play.png::CompressedTexture2D::5994407181982022523::1728153307::1728153336::1::::<><>::
-Player background.png::CompressedTexture2D::5098168123075880180::1728153307::1728153336::1::::<><>::
+next hover.png::CompressedTexture2D::757739104641648699::1728153307::1728241067::1::::<><>::
+next pressed.png::CompressedTexture2D::7596878117732580185::1728153307::1728241067::1::::<><>::
+next.png::CompressedTexture2D::4010674228682171426::1728153307::1728241067::1::::<><>::
+pause hover.png::CompressedTexture2D::120415938316044996::1728153307::1728241067::1::::<><>::
+pause pressed.png::CompressedTexture2D::6947402502104932727::1728153307::1728241067::1::::<><>::
+pause.png::CompressedTexture2D::2283556498224375433::1728153307::1728241067::1::::<><>::
+Play hover.png::CompressedTexture2D::7134507261591715619::1728153307::1728241067::1::::<><>::
+Play pressed.png::CompressedTexture2D::603970141688328759::1728153307::1728241067::1::::<><>::
+Play.png::CompressedTexture2D::5994407181982022523::1728153307::1728241067::1::::<><>::
+Player background.png::CompressedTexture2D::5098168123075880180::1728153307::1728241067::1::::<><>::
 ::res://Art/UI/::1728227950
-Your_Meat_was_Beat.png::CompressedTexture2D::7621651702232814540::1728227501::1728227950::1::::<><>::
+Your_Meat_was_Beat.png::CompressedTexture2D::7621651702232814540::1728227501::1728241068::1::::<><>::
 ::res://Art/Units/::1728153307
-::res://Art/Units/Enemies/::1728232169
-Enemy1SpriteSheet-Sheet.png::CompressedTexture2D::6837830653198035175::1728119801::1728132280::1::::<><>::
-Enemy2-Sheet.png::CompressedTexture2D::1486340103777906312::1728230865::1728231791::1::::<><>::
-EnemySpriteFrames.tres::SpriteFrames::5784635115726048974::1728232169::0::1::::<><>::uid://c4okcpbsryxyl::::res://Art/Units/Enemies/Enemy1SpriteSheet-Sheet.png<>uid://vf82l3i27d3u::::res://Art/Units/Enemies/Enemy2-Sheet.png
+::res://Art/Units/Enemies/::1728237762
+Enemy1SpriteSheet-Sheet.png::CompressedTexture2D::6837830653198035175::1728119801::1728241067::1::::<><>::
+Enemy2-Sheet.png::CompressedTexture2D::1486340103777906312::1728230865::1728241067::1::::<><>::
+EnemySpriteFrames.tres::SpriteFrames::5784635115726048974::1728237762::0::1::::<><>::uid://c4okcpbsryxyl::::res://Art/Units/Enemies/Enemy1SpriteSheet-Sheet.png<>uid://vf82l3i27d3u::::res://Art/Units/Enemies/Enemy2-Sheet.png
 ::res://Art/Units/Projectiles/::1728133151
-potato.png::CompressedTexture2D::7555024734193229894::1728133113::1728133151::1::::<><>::
+potato.png::CompressedTexture2D::7555024734193229894::1728133113::1728241067::1::::<><>::
 ::res://Art/Units/Scrotes/::1728231791
-ScroatJenkins.png::CompressedTexture2D::5966816276638058742::1728119945::1728132280::1::::<><>::
-ScroteStranding-Sheet.png::CompressedTexture2D::5106339959294488787::1728230865::1728231791::1::::<><>::
+ScroatJenkins.png::CompressedTexture2D::5966816276638058742::1728119945::1728241067::1::::<><>::
+ScroteStranding-Sheet.png::CompressedTexture2D::5106339959294488787::1728230865::1728241067::1::::<><>::
 ::res://Art/Units/Spawners/::1728227950
-ScroteSpawner-Sheet.png::CompressedTexture2D::2091234408690193279::1728227501::1728227950::1::::<><>::
-SpawningPool-Sheet.png::CompressedTexture2D::5418366570611321414::1728153307::1728153336::1::::<><>::
+ScroteSpawner-Sheet.png::CompressedTexture2D::2091234408690193279::1728227501::1728241067::1::::<><>::
+SpawningPool-Sheet.png::CompressedTexture2D::5418366570611321414::1728153307::1728241067::1::::<><>::
 ::res://Art/Units/Turrets/::1728133151
-Turret1-Sheet.png::CompressedTexture2D::6839773854395111328::1728133113::1728133151::1::::<><>::
+Turret1-Sheet.png::CompressedTexture2D::6839773854395111328::1728133113::1728241067::1::::<><>::
 ::res://Fonts/::1728132472
-PixeloidMono-d94EV.ttf::FontFile::488249236548638143::1728132289::1728132472::1::::<><>::
-PixeloidSans-mLxMm.ttf::FontFile::934875694488404585::1728132289::1728132472::1::::<><>::
-PixeloidSansBold-PKnYd.ttf::FontFile::831699976910365971::1728132289::1728132472::1::::<><>::
+PixeloidMono-d94EV.ttf::FontFile::488249236548638143::1728132289::1728241067::1::::<><>::
+PixeloidSans-mLxMm.ttf::FontFile::934875694488404585::1728132289::1728241067::1::::<><>::
+PixeloidSansBold-PKnYd.ttf::FontFile::831699976910365971::1728132289::1728241067::1::::<><>::
 ::res://Gameplay/::1728132289
 ::res://Gameplay/Map/::1728134798
 WorldMap.tscn::PackedScene::8701717946156880919::1728134798::0::1::::<><>::uid://bsnnnedb70g0f::::res://Art/Map/Floor/TileSet.png<>res://Scripts/Gameplay/Map/world_map.gd
-::res://HUD/::1728232585
-mainHUD.tscn::PackedScene::1541807988097884052::1728227501::0::1::::<><>::uid://p3qtvxt1p3ko::::res://Art/HUD Icons/meat.png<>res://Scripts/HUD/main_hud.gd<>uid://l348hsha7jl0::::res://Fonts/PixeloidSansBold-PKnYd.ttf<>uid://bl0jyom55ooj1::::res://Art/HUD Icons/Skin.png<>uid://bnr4cmahk2e2w::::res://Art/HUD Icons/boner.png<>uid://cqiyhj5yl0rqa::::res://Art/HUD Icons/Tower.png<>uid://dy0hli3o6o1kv::::res://Art/HUD Icons/Selector.png<>uid://0jrekgsa606j::::res://Art/HUD Icons/turreticon.png<>uid://6vty7eyxcx7o::::res://HUD/MusicPlayerWidget.tscn
-MusicPlayerWidget.tscn::PackedScene::2220404255578253994::1728212255::0::1::::<><>::res://Scripts/HUD/music_player_widget.gd<>uid://cevuc4i4epcem::::res://Art/Player/Player background.png<>uid://crn0ameox2qm2::::res://Art/Player/Play.png<>uid://ch0gyojapeqo3::::res://Songs/Protein vs Carbs (50's).mp3<>uid://xrlalpq37paq::::res://Songs/Protein vs Carbs (Country).mp3<>uid://7sf3vh2h0ohl::::res://Art/Player/pause.png<>uid://c0m8tn8mli1i3::::res://Songs/Protein vs. Carbs (1).mp3<>uid://bxe2hoxby4f3o::::res://Art/Player/next.png<>uid://bsskyoo3wxhun::::res://Songs/Protein vs. Carbs (2).mp3<>uid://l348hsha7jl0::::res://Fonts/PixeloidSansBold-PKnYd.ttf<>uid://bony478lq3fok::::res://Songs/Protein vs. Carbs (3).mp3<>uid://cramueyj2h0ec::::res://Art/Units/Scrotes/ScroatJenkins.png<>uid://kopgd7es4rnm::::res://Songs/Protein vs. Carbs (4).mp3<>uid://dccjr4iaguf7j::::res://Songs/Protein vs. Carbs (5).mp3<>uid://d0yddobnsp0is::::res://Songs/Protein vs. Carbs (7).mp3<>uid://r73ppkxberh2::::res://Songs/Protein vs. Carbs (8).mp3<>uid://g7wqt371ohdb::::res://Songs/Protein vs. Carbs.mp3<>uid://i33kkwcth6kj::::res://Songs/Scrotes vs. Protein.mp3<>uid://dm2maiw554q8j::::res://Songs/Scrotus.mp3<>uid://dxyjoldkiomic::::res://Songs/Scrote Jenkins.mp3<>uid://bv4a482gw8muh::::res://Songs/Cowboy Scrote.mp3<>uid://c8waj627vktlb::::res://Art/Player/Play hover.png<>uid://bylh6ilprriy::::res://Art/Player/pause hover.png<>uid://c58mx7bfbgptv::::res://Art/Player/pause pressed.png<>uid://k2b38kvfewgh::::res://Art/Player/next hover.png<>uid://dgh8qcojaakej::::res://Art/Player/next pressed.png
-pauseMenu.tscn::PackedScene::2820407572421474074::1728159823::0::1::::<><>::res://Scripts/HUD/pause_menu.gd<>uid://l348hsha7jl0::::res://Fonts/PixeloidSansBold-PKnYd.ttf<>res://Shaders/blur.gdshader
+::res://HUD/::1728241052
+HealthBar.tscn::PackedScene::5646598351798140832::1728241052::0::1::::<><>::res://Scripts/HUD/health_bar.gd
+mainHUD.tscn::PackedScene::1541807988097884052::1728240799::0::1::::<><>::uid://p3qtvxt1p3ko::::res://Art/HUD Icons/meat.png<>res://Scripts/HUD/main_hud.gd<>uid://l348hsha7jl0::::res://Fonts/PixeloidSansBold-PKnYd.ttf<>uid://bl0jyom55ooj1::::res://Art/HUD Icons/Skin.png<>uid://bnr4cmahk2e2w::::res://Art/HUD Icons/boner.png<>uid://cqiyhj5yl0rqa::::res://Art/HUD Icons/Tower.png<>uid://dy0hli3o6o1kv::::res://Art/HUD Icons/Selector.png<>uid://0jrekgsa606j::::res://Art/HUD Icons/turreticon.png<>uid://k67ljc32f8rs::::res://Art/HUD Icons/HouseIcon.png<>uid://6vty7eyxcx7o::::res://HUD/MusicPlayerWidget.tscn
+MusicPlayerWidget.tscn::PackedScene::2220404255578253994::1728240799::0::1::::<><>::res://Scripts/HUD/music_player_widget.gd<>uid://cevuc4i4epcem::::res://Art/Player/Player background.png<>uid://crn0ameox2qm2::::res://Art/Player/Play.png<>uid://ch0gyojapeqo3::::res://Songs/Protein vs Carbs (50's).mp3<>uid://xrlalpq37paq::::res://Songs/Protein vs Carbs (Country).mp3<>uid://7sf3vh2h0ohl::::res://Art/Player/pause.png<>uid://c0m8tn8mli1i3::::res://Songs/Protein vs. Carbs (1).mp3<>uid://bxe2hoxby4f3o::::res://Art/Player/next.png<>uid://bsskyoo3wxhun::::res://Songs/Protein vs. Carbs (2).mp3<>uid://l348hsha7jl0::::res://Fonts/PixeloidSansBold-PKnYd.ttf<>uid://bony478lq3fok::::res://Songs/Protein vs. Carbs (3).mp3<>uid://cramueyj2h0ec::::res://Art/Units/Scrotes/ScroatJenkins.png<>uid://kopgd7es4rnm::::res://Songs/Protein vs. Carbs (4).mp3<>uid://dccjr4iaguf7j::::res://Songs/Protein vs. Carbs (5).mp3<>uid://d0yddobnsp0is::::res://Songs/Protein vs. Carbs (7).mp3<>uid://r73ppkxberh2::::res://Songs/Protein vs. Carbs (8).mp3<>uid://g7wqt371ohdb::::res://Songs/Protein vs. Carbs.mp3<>uid://i33kkwcth6kj::::res://Songs/Scrotes vs. Protein.mp3<>uid://dm2maiw554q8j::::res://Songs/Scrotus.mp3<>uid://dxyjoldkiomic::::res://Songs/Scrote Jenkins.mp3<>uid://bv4a482gw8muh::::res://Songs/Cowboy Scrote.mp3<>uid://c8waj627vktlb::::res://Art/Player/Play hover.png<>uid://bylh6ilprriy::::res://Art/Player/pause hover.png<>uid://c58mx7bfbgptv::::res://Art/Player/pause pressed.png<>uid://k2b38kvfewgh::::res://Art/Player/next hover.png<>uid://dgh8qcojaakej::::res://Art/Player/next pressed.png
+pauseMenu.tscn::PackedScene::2820407572421474074::1728240799::0::1::::<><>::res://Scripts/HUD/pause_menu.gd<>uid://l348hsha7jl0::::res://Fonts/PixeloidSansBold-PKnYd.ttf<>res://Shaders/blur.gdshader
 TitleScreenHud.tscn::PackedScene::2286601685418041002::1728159823::0::1::::<><>::res://Scripts/Core/title_screen_hud.gd<>uid://l348hsha7jl0::::res://Fonts/PixeloidSansBold-PKnYd.ttf<>uid://6vty7eyxcx7o::::res://HUD/MusicPlayerWidget.tscn
-::res://Levels/::1728232585
-DeathScreen.tscn::PackedScene::519055780263500645::1728227501::0::1::::<><>::res://Scripts/HUD/death_screen.gd<>res://Shaders/blur.gdshader<>uid://dgt8qwo5wy88g::::res://Art/UI/Your_Meat_was_Beat.png<>res://Shaders/fade.gdshader
-main.tscn::PackedScene::9209739849135299463::1728232491::0::1::::<><>::uid://dv8ga14jrgtfb::::res://Gameplay/Map/WorldMap.tscn<>res://Scripts/Core/camera_2d.gd<>res://Scripts/Core/main.gd<>uid://cm2wx2hxyu6m8::::res://Unit/Spawners/SpawningPool.tscn<>uid://bay8ourwndfe8::::res://Art/Map/Floor/TileHighlight.png<>uid://bpfr7117rx3jn::::res://Sound/HouseNoise.wav<>uid://bgghx27ni246q::::res://HUD/pauseMenu.tscn<>uid://v74l8i6gpmfc::::res://HUD/mainHUD.tscn<>res://Scripts/Units/Enemies/enemies.gd<>uid://gl5n4qwltrfa::::res://Unit/Enemy.tscn
-TitleScreen.tscn::PackedScene::5651614448284507112::1728232491::0::1::::<><>::uid://bsnnnedb70g0f::::res://Art/Map/Floor/TileSet.png<>res://Scripts/Core/title_screen.gd<>uid://7tv84aj5tbti::::res://HUD/TitleScreenHud.tscn<>uid://cm2wx2hxyu6m8::::res://Unit/Spawners/SpawningPool.tscn<>uid://dte3uhl6ck5hh::::res://Unit/Scrote.tscn<>uid://cooedice4wffq::::res://Art/Units/Enemies/EnemySpriteFrames.tres
+::res://Levels/::1728240799
+DeathScreen.tscn::PackedScene::3692627388782384899::1728240799::0::1::::<><>::res://Scripts/HUD/death_screen.gd<>res://Shaders/blur.gdshader<>uid://dgt8qwo5wy88g::::res://Art/UI/Your_Meat_was_Beat.png<>res://Shaders/fade.gdshader
+main.tscn::PackedScene::9209739849135299463::1728240799::0::1::::<><>::uid://dv8ga14jrgtfb::::res://Gameplay/Map/WorldMap.tscn<>res://Scripts/Core/camera_2d.gd<>res://Scripts/Core/main.gd<>uid://cm2wx2hxyu6m8::::res://Unit/Spawners/SpawningPool.tscn<>uid://bay8ourwndfe8::::res://Art/Map/Floor/TileHighlight.png<>uid://bpfr7117rx3jn::::res://Sound/HouseNoise.wav<>uid://bgghx27ni246q::::res://HUD/pauseMenu.tscn<>uid://v74l8i6gpmfc::::res://HUD/mainHUD.tscn<>res://Scripts/Units/Enemies/enemies.gd<>uid://gl5n4qwltrfa::::res://Unit/Enemy.tscn
+TitleScreen.tscn::PackedScene::5651614448284507112::1728240799::0::1::::<><>::uid://bsnnnedb70g0f::::res://Art/Map/Floor/TileSet.png<>res://Scripts/Core/title_screen.gd<>uid://7tv84aj5tbti::::res://HUD/TitleScreenHud.tscn<>uid://cm2wx2hxyu6m8::::res://Unit/Spawners/SpawningPool.tscn<>uid://dte3uhl6ck5hh::::res://Unit/Scrote.tscn<>uid://cooedice4wffq::::res://Art/Units/Enemies/EnemySpriteFrames.tres
 ::res://Scripts/::1728212255
-::res://Scripts/Core/::1728230865
+::res://Scripts/Core/::1728237704
 camera_2d.gd::GDScript::-1::1728230865::0::1::::<>Camera2D<>::
-main.gd::GDScript::-1::1728230865::0::1::::<>Node<>::
+main.gd::GDScript::-1::1728237704::0::1::::<>Node<>::
 title_screen.gd::GDScript::-1::1728156730::0::1::::<>Node<>::
 title_screen_hud.gd::GDScript::-1::1728156730::0::1::::<>CanvasLayer<>::
 ::res://Scripts/Gameplay/::1728132289
 ::res://Scripts/Gameplay/Map/::1728230865
 world_map.gd::GDScript::-1::1728230865::0::1::::<>TileMapLayer<>::
-::res://Scripts/HUD/::1728227501
+::res://Scripts/HUD/::1728240787
 death_screen.gd::GDScript::-1::1728227501::0::1::::<>CanvasLayer<>::
+health_bar.gd::GDScript::-1::1728240787::0::1::::<>ProgressBar<>::
 main_hud.gd::GDScript::-1::1728227501::0::1::::<>CanvasLayer<>::
 music_player_widget.gd::GDScript::-1::1728212255::0::1::::<>Node<>::
 pause_menu.gd::GDScript::-1::1728227501::0::1::::<>CanvasLayer<>::
-::res://Scripts/Structures/::1728232488
+::res://Scripts/Structures/::1728237762
 scrote_house.gd::GDScript::-1::1728227501::0::1::::<>Area2D<>::
-Structure.gd::GDScript::-1::1728232488::0::1::::<>Area2D<>::
+Structure.gd::GDScript::-1::1728237762::0::1::::<>Area2D<>::
 ::res://Scripts/Units/::1728133113
-::res://Scripts/Units/Enemies/::1728232435
+::res://Scripts/Units/Enemies/::1728237704
 animated_sprite.gd::GDScript::-1::1728230865::0::1::::<>AnimatedSprite2D<>::
-enemies.gd::GDScript::-1::1728232243::0::1::::<>Node2D<>::
-enemy.gd::GDScript::-1::1728232435::0::1::::<>Area2D<>::
+enemies.gd::GDScript::-1::1728237704::0::1::::<>Node2D<>::
+enemy.gd::GDScript::-1::1728237704::0::1::::<>Area2D<>::
 enemyspawner.gd::GDScript::-1::1728230856::0::1::::<>Node2D<>::
 ::res://Scripts/Units/Projectiles/::1728230856
 potato.gd::GDScript::-1::1728230856::0::1::::<>Area2D<>::
@@ -98,157 +99,30 @@ turret_sprite.gd::GDScript::-1::1728231789::0::1::::<>AnimatedSprite2D<>::
 blur.gdshader::Shader::-1::1728159823::0::1::::<><>::
 fade.gdshader::Shader::-1::1728227501::0::1::::<><>::
 ::res://Songs/::1728156734
-Cowboy Scrote.mp3::AudioStreamMP3::3920306918266354119::1728156730::1728156734::1::::<><>::
-Protein vs Carbs (50's).mp3::AudioStreamMP3::5316180626964602504::1728153307::1728153336::1::::<><>::
-Protein vs Carbs (Country).mp3::AudioStreamMP3::1650106314108769228::1728153307::1728153336::1::::<><>::
-Protein vs. Carbs (1).mp3::AudioStreamMP3::6554373316573582532::1728153308::1728153336::1::::<><>::
-Protein vs. Carbs (2).mp3::AudioStreamMP3::3687629455988809961::1728153308::1728153336::1::::<><>::
-Protein vs. Carbs (3).mp3::AudioStreamMP3::3397412133525996794::1728153308::1728153336::1::::<><>::
-Protein vs. Carbs (4).mp3::AudioStreamMP3::731711401802834450::1728153308::1728153336::1::::<><>::
-Protein vs. Carbs (5).mp3::AudioStreamMP3::7304346840839169373::1728153308::1728153336::1::::<><>::
-Protein vs. Carbs (7).mp3::AudioStreamMP3::8963716453974601214::1728153308::1728153336::1::::<><>::
-Protein vs. Carbs (8).mp3::AudioStreamMP3::1260998097027322333::1728153308::1728153336::1::::<><>::
-Protein vs. Carbs.mp3::AudioStreamMP3::488558539188860819::1728153308::1728153336::1::::<><>::
-Scrote Jenkins.mp3::AudioStreamMP3::8823722557757923506::1728156730::1728156734::1::::<><>::
-Scrotes vs. Protein.mp3::AudioStreamMP3::621031819290213889::1728153308::1728153336::1::::<><>::
-Scrotus.mp3::AudioStreamMP3::8057995433585313843::1728156730::1728156734::1::::<><>::
+Cowboy Scrote.mp3::AudioStreamMP3::3920306918266354119::1728156730::1728241067::1::::<><>::
+Protein vs Carbs (50's).mp3::AudioStreamMP3::5316180626964602504::1728153307::1728241067::1::::<><>::
+Protein vs Carbs (Country).mp3::AudioStreamMP3::1650106314108769228::1728153307::1728241067::1::::<><>::
+Protein vs. Carbs (1).mp3::AudioStreamMP3::6554373316573582532::1728153308::1728241067::1::::<><>::
+Protein vs. Carbs (2).mp3::AudioStreamMP3::3687629455988809961::1728153308::1728241067::1::::<><>::
+Protein vs. Carbs (3).mp3::AudioStreamMP3::3397412133525996794::1728153308::1728241067::1::::<><>::
+Protein vs. Carbs (4).mp3::AudioStreamMP3::731711401802834450::1728153308::1728241067::1::::<><>::
+Protein vs. Carbs (5).mp3::AudioStreamMP3::7304346840839169373::1728153308::1728241067::1::::<><>::
+Protein vs. Carbs (7).mp3::AudioStreamMP3::8963716453974601214::1728153308::1728241067::1::::<><>::
+Protein vs. Carbs (8).mp3::AudioStreamMP3::1260998097027322333::1728153308::1728241067::1::::<><>::
+Protein vs. Carbs.mp3::AudioStreamMP3::488558539188860819::1728153308::1728241067::1::::<><>::
+Scrote Jenkins.mp3::AudioStreamMP3::8823722557757923506::1728156730::1728241067::1::::<><>::
+Scrotes vs. Protein.mp3::AudioStreamMP3::621031819290213889::1728153308::1728241067::1::::<><>::
+Scrotus.mp3::AudioStreamMP3::8057995433585313843::1728156730::1728241067::1::::<><>::
 ::res://Sound/::1728227950
-HouseNoise.wav::AudioStreamWAV::3450665968565478775::1728227501::1728227950::1::::<><>::
+HouseNoise.wav::AudioStreamWAV::3450665968565478775::1728227501::1728241068::1::::<><>::
 ::res://Structures/::1728153308
-::res://Structures/Walls/::1728232492
-MeatWall.tscn::PackedScene::8843270574233772131::1728232492::0::1::::<><>::res://Scripts/Structures/Structure.gd<>uid://c1vfb2cwi0snu::::res://Art/Map/Walls/bonewalltile.png
-::res://Unit/::1728232492
-Enemy.tscn::PackedScene::445687491135679862::1728232491::0::1::::<><>::res://Scripts/Units/Enemies/enemy.gd<>uid://cooedice4wffq::::res://Art/Units/Enemies/EnemySpriteFrames.tres<>res://Scripts/Units/Enemies/animated_sprite.gd
-Potato.tscn::PackedScene::4885556375571705219::1728232491::0::1::::<><>::uid://dfvyfhr5dj8f7::::res://Art/Units/Projectiles/potato.png<>res://Scripts/Units/Projectiles/potato.gd
-Scrote.tscn::PackedScene::8502843768961614845::1728230865::0::1::::<><>::res://Scripts/Units/Scrotes/scrote.gd<>uid://cramueyj2h0ec::::res://Art/Units/Scrotes/ScroatJenkins.png
-Turret.tscn::PackedScene::4904117696983421295::1728232492::0::1::::<><>::res://Scripts/Units/Turrets/turret.gd<>uid://cbuunucqe7au2::::res://Unit/Potato.tscn<>uid://c4pict7glk3hc::::res://Art/Units/Turrets/Turret1-Sheet.png<>res://Scripts/Units/Turrets/turret_sprite.gd
-::res://Unit/Spawners/::1728232492
-ScroteHouse.tscn::PackedScene::-1::1728227501::0::1::::<><>::
-SpawningPool.tscn::PackedScene::5672223967524873461::1728232492::0::1::::<><>::uid://cjgxx85frllxe::::res://Art/Units/Spawners/SpawningPool-Sheet.png<>res://Scripts/Units/Enemies/enemyspawner.gd
-=======
-::res://::1728228704
-icon.svg::CompressedTexture2D::4146542727428341185::1728069665::1728161487::1::::<><>::
-README.md::TextFile::-1::1728120723::0::1::::<><>::
-::res://Art/::1728227269
-::res://Art/HUD Icons/::1728222009
-boner.png::CompressedTexture2D::3335735067797255316::1728129454::1728161487::1::::<><>::
-HouseIcon.png::CompressedTexture2D::767847211365925936::1728221933::1728222009::1::::<><>::
-meat.png::CompressedTexture2D::1111641773072110602::1728129454::1728161487::1::::<><>::
-Selector.png::CompressedTexture2D::8895848869045321713::1728137916::1728161487::1::::<><>::
-Skin.png::CompressedTexture2D::3210697474819841940::1728129454::1728161487::1::::<><>::
-Tower.png::CompressedTexture2D::5913848116171364316::1728129454::1728161487::1::::<><>::
-turreticon.png::CompressedTexture2D::1774340358111411011::1728137916::1728161487::1::::<><>::
-::res://Art/Map/::1728141246
-::res://Art/Map/Floor/::1728161488
-MeatTile2.png::CompressedTexture2D::34172514784572578::1728117287::1728161487::1::::<><>::
-TileHighlight.png::CompressedTexture2D::2437995489412251045::1728129454::1728161487::1::::<><>::
-TileSet.png::CompressedTexture2D::3677469531024191127::1728122754::1728161488::1::::<><>::
-::res://Art/Map/Walls/::1728161487
-bonewalltile.png::CompressedTexture2D::6641410027799373214::1728141246::1728161487::1::::<><>::
-Bonewall_old.png::CompressedTexture2D::8020982885489216401::1728141246::1728161487::1::::<><>::
-::res://Art/Player/::1728161488
-next hover.png::CompressedTexture2D::757739104641648699::1728152840::1728161487::1::::<><>::
-next pressed.png::CompressedTexture2D::7596878117732580185::1728152840::1728161487::1::::<><>::
-next.png::CompressedTexture2D::4010674228682171426::1728152840::1728161487::1::::<><>::
-pause hover.png::CompressedTexture2D::120415938316044996::1728152840::1728161487::1::::<><>::
-pause pressed.png::CompressedTexture2D::6947402502104932727::1728152840::1728161487::1::::<><>::
-pause.png::CompressedTexture2D::2283556498224375433::1728152840::1728161487::1::::<><>::
-Play hover.png::CompressedTexture2D::7134507261591715619::1728152840::1728161487::1::::<><>::
-Play pressed.png::CompressedTexture2D::603970141688328759::1728152840::1728161487::1::::<><>::
-Play.png::CompressedTexture2D::5994407181982022523::1728152840::1728161487::1::::<><>::
-Player background.png::CompressedTexture2D::5098168123075880180::1728152840::1728161488::1::::<><>::
-::res://Art/UI/::1728227325
-Your_Meat_was_Beat.png::CompressedTexture2D::7621651702232814540::1728227269::1728227325::1::::<><>::
-::res://Art/Units/::1728152843
-::res://Art/Units/Enemies/::1728230477
-Enemy1SpriteSheet-Sheet.png::CompressedTexture2D::6837830653198035175::1728117791::1728161488::1::::<><>::
-Enemy2-Sheet.png::CompressedTexture2D::1486340103777906312::1728230477::1728230517::1::::<><>::
-EnemySpriteFrames.tres::SpriteFrames::3627757827743110554::1728230477::0::1::::<><>::uid://c4okcpbsryxyl::::res://Art/Units/Enemies/Enemy1SpriteSheet-Sheet.png<>uid://vf82l3i27d3u::::res://Art/Units/Enemies/Enemy2-Sheet.png
-::res://Art/Units/Projectiles/::1728161487
-potato.png::CompressedTexture2D::7555024734193229894::1728134143::1728161487::1::::<><>::
-::res://Art/Units/Scrotes/::1728230477
-ScroatJenkins.png::CompressedTexture2D::5966816276638058742::1728120723::1728161487::1::::<><>::
-ScroteStranding-Sheet.png::CompressedTexture2D::5106339959294488787::1728230477::1728230517::1::::<><>::
-::res://Art/Units/Spawners/::1728222009
-ScroteSpawner-Sheet.png::CompressedTexture2D::2091234408690193279::1728221933::1728222009::1::::<><>::
-SpawningPool-Sheet.png::CompressedTexture2D::5418366570611321414::1728152843::1728161487::1::::<><>::
-::res://Art/Units/Turrets/::1728161487
-Turret1-Sheet.png::CompressedTexture2D::6839773854395111328::1728134143::1728161487::1::::<><>::
-::res://Fonts/::1728161487
-PixeloidMono-d94EV.ttf::FontFile::488249236548638143::1728129454::1728161487::1::::<><>::
-PixeloidSans-mLxMm.ttf::FontFile::934875694488404585::1728129454::1728161487::1::::<><>::
-PixeloidSansBold-PKnYd.ttf::FontFile::831699976910365971::1728129454::1728161487::1::::<><>::
-::res://Gameplay/::1728125256
-::res://Gameplay/Map/::1728161081
-WorldMap.tscn::PackedScene::8701717946156880919::1728161081::0::1::::<><>::uid://bsnnnedb70g0f::::res://Art/Map/Floor/TileSet.png<>res://Scripts/Gameplay/Map/world_map.gd
-::res://HUD/::1728230107
-DeathScreen.tscn::PackedScene::519055780263500645::1728230107::0::1::::<><>::res://Scripts/HUD/death_screen.gd<>res://Shaders/blur.gdshader<>uid://dgt8qwo5wy88g::::res://Art/UI/Your_Meat_was_Beat.png<>res://Shaders/fade.gdshader
-mainHUD.tscn::PackedScene::1541807988097884052::1728222581::0::1::::<><>::uid://p3qtvxt1p3ko::::res://Art/HUD Icons/meat.png<>res://Scripts/HUD/main_hud.gd<>uid://l348hsha7jl0::::res://Fonts/PixeloidSansBold-PKnYd.ttf<>uid://bl0jyom55ooj1::::res://Art/HUD Icons/Skin.png<>uid://bnr4cmahk2e2w::::res://Art/HUD Icons/boner.png<>uid://cqiyhj5yl0rqa::::res://Art/HUD Icons/Tower.png<>uid://dy0hli3o6o1kv::::res://Art/HUD Icons/Selector.png<>uid://0jrekgsa606j::::res://Art/HUD Icons/turreticon.png<>uid://k67ljc32f8rs::::res://Art/HUD Icons/HouseIcon.png<>uid://6vty7eyxcx7o::::res://HUD/MusicPlayerWidget.tscn
-MusicPlayerWidget.tscn::PackedScene::2220404255578253994::1728164293::0::1::::<><>::res://Scripts/HUD/music_player_widget.gd<>uid://cevuc4i4epcem::::res://Art/Player/Player background.png<>uid://crn0ameox2qm2::::res://Art/Player/Play.png<>uid://ch0gyojapeqo3::::res://Songs/Protein vs Carbs (50's).mp3<>uid://xrlalpq37paq::::res://Songs/Protein vs Carbs (Country).mp3<>uid://7sf3vh2h0ohl::::res://Art/Player/pause.png<>uid://c0m8tn8mli1i3::::res://Songs/Protein vs. Carbs (1).mp3<>uid://bxe2hoxby4f3o::::res://Art/Player/next.png<>uid://bsskyoo3wxhun::::res://Songs/Protein vs. Carbs (2).mp3<>uid://l348hsha7jl0::::res://Fonts/PixeloidSansBold-PKnYd.ttf<>uid://bony478lq3fok::::res://Songs/Protein vs. Carbs (3).mp3<>uid://cramueyj2h0ec::::res://Art/Units/Scrotes/ScroatJenkins.png<>uid://kopgd7es4rnm::::res://Songs/Protein vs. Carbs (4).mp3<>uid://dccjr4iaguf7j::::res://Songs/Protein vs. Carbs (5).mp3<>uid://d0yddobnsp0is::::res://Songs/Protein vs. Carbs (7).mp3<>uid://r73ppkxberh2::::res://Songs/Protein vs. Carbs (8).mp3<>uid://g7wqt371ohdb::::res://Songs/Protein vs. Carbs.mp3<>uid://i33kkwcth6kj::::res://Songs/Scrotes vs. Protein.mp3<>uid://dm2maiw554q8j::::res://Songs/Scrotus.mp3<>uid://dxyjoldkiomic::::res://Songs/Scrote Jenkins.mp3<>uid://bv4a482gw8muh::::res://Songs/Cowboy Scrote.mp3<>uid://c8waj627vktlb::::res://Art/Player/Play hover.png<>uid://bylh6ilprriy::::res://Art/Player/pause hover.png<>uid://c58mx7bfbgptv::::res://Art/Player/pause pressed.png<>uid://k2b38kvfewgh::::res://Art/Player/next hover.png<>uid://dgh8qcojaakej::::res://Art/Player/next pressed.png
-pauseMenu.tscn::PackedScene::2820407572421474074::1728230107::0::1::::<><>::res://Scripts/HUD/pause_menu.gd<>uid://l348hsha7jl0::::res://Fonts/PixeloidSansBold-PKnYd.ttf<>res://Shaders/blur.gdshader
-TitleScreenHud.tscn::PackedScene::2286601685418041002::1728230107::0::1::::<><>::res://Scripts/Core/title_screen_hud.gd<>uid://l348hsha7jl0::::res://Fonts/PixeloidSansBold-PKnYd.ttf<>uid://6vty7eyxcx7o::::res://HUD/MusicPlayerWidget.tscn
-::res://Levels/::1728230477
-main.tscn::PackedScene::9209739849135299463::1728230205::0::1::::<><>::uid://dv8ga14jrgtfb::::res://Gameplay/Map/WorldMap.tscn<>res://Scripts/Core/camera_2d.gd<>res://Scripts/Core/main.gd<>uid://cm2wx2hxyu6m8::::res://Unit/Spawners/SpawningPool.tscn<>uid://bay8ourwndfe8::::res://Art/Map/Floor/TileHighlight.png<>uid://bpfr7117rx3jn::::res://Sound/HouseNoise.wav<>uid://bgghx27ni246q::::res://HUD/pauseMenu.tscn<>uid://v74l8i6gpmfc::::res://HUD/mainHUD.tscn<>res://Scripts/Units/Enemies/enemies.gd<>uid://gl5n4qwltrfa::::res://Unit/Enemy.tscn
-TitleScreen.tscn::PackedScene::5651614448284507112::1728230176::0::1::::<><>::uid://bsnnnedb70g0f::::res://Art/Map/Floor/TileSet.png<>res://Scripts/Core/title_screen.gd<>uid://7tv84aj5tbti::::res://HUD/TitleScreenHud.tscn<>uid://cm2wx2hxyu6m8::::res://Unit/Spawners/SpawningPool.tscn<>uid://dte3uhl6ck5hh::::res://Unit/Scrote.tscn<>uid://brxkv2pvc2qhu::::res://Art/Units/Enemies/EnemySpriteFrames.tres
-::res://Scripts/::1728207899
-::res://Scripts/Core/::1728228704
-camera_2d.gd::GDScript::-1::1728228447::0::1::::<>Camera2D<>::
-main.gd::GDScript::-1::1728228436::0::1::::<>Node<>::
-title_screen.gd::GDScript::-1::1728162086::0::1::::<>Node<>::
-title_screen_hud.gd::GDScript::-1::1728154178::0::1::::<>CanvasLayer<>::
-::res://Scripts/Gameplay/::1728121547
-::res://Scripts/Gameplay/Map/::1728228414
-world_map.gd::GDScript::-1::1728228414::0::1::::<>TileMapLayer<>::
-::res://Scripts/HUD/::1728227269
-death_screen.gd::GDScript::-1::1728227269::0::1::::<>CanvasLayer<>::
-main_hud.gd::GDScript::-1::1728221933::0::1::::<>CanvasLayer<>::
-music_player_widget.gd::GDScript::-1::1728164293::0::1::::<>Node<>::
-pause_menu.gd::GDScript::-1::1728226883::0::1::::<>CanvasLayer<>::
-::res://Scripts/Structures/::1728228414
-scrote_house.gd::GDScript::-1::1728227269::0::1::::<>Area2D<>::
-Structure.gd::GDScript::-1::1728228414::0::1::::<>Node2D<>::
-::res://Scripts/Units/::1728134143
-::res://Scripts/Units/Enemies/::1728230477
-animated_sprite.gd::GDScript::-1::1728230477::0::1::::<>AnimatedSprite2D<>::
-enemies.gd::GDScript::-1::1728228414::0::1::::<>Node2D<>::
-enemy.gd::GDScript::-1::1728228414::0::1::::<>Node2D<>::
-enemyspawner.gd::GDScript::-1::1728228414::0::1::::<>Node2D<>::
-::res://Scripts/Units/Projectiles/::1728228414
-potato.gd::GDScript::-1::1728228414::0::1::::<>Node2D<>::
-::res://Scripts/Units/Scrotes/::1728230477
-scrote.gd::GDScript::-1::1728230477::0::1::::<>RigidBody2D<>::
-::res://Scripts/Units/Turrets/::1728228414
-turret.gd::GDScript::-1::1728228414::0::1::::<>Node2D<>::
-turret_sprite.gd::GDScript::-1::1728212466::0::1::::<>AnimatedSprite2D<>::
-::res://Shaders/::1728230177
-blur.gdshader::Shader::-1::1728230176::0::1::::<><>::
-fade.gdshader::Shader::-1::1728230176::0::1::::<><>::
-::res://Songs/::1728161487
-Cowboy Scrote.mp3::AudioStreamMP3::3920306918266354119::1728156977::1728161487::1::::<><>::
-Protein vs Carbs (50's).mp3::AudioStreamMP3::5316180626964602504::1728152840::1728161487::1::::<><>::
-Protein vs Carbs (Country).mp3::AudioStreamMP3::1650106314108769228::1728152840::1728161487::1::::<><>::
-Protein vs. Carbs (1).mp3::AudioStreamMP3::6554373316573582532::1728152840::1728161487::1::::<><>::
-Protein vs. Carbs (2).mp3::AudioStreamMP3::3687629455988809961::1728152840::1728161487::1::::<><>::
-Protein vs. Carbs (3).mp3::AudioStreamMP3::3397412133525996794::1728152840::1728161487::1::::<><>::
-Protein vs. Carbs (4).mp3::AudioStreamMP3::731711401802834450::1728152840::1728161487::1::::<><>::
-Protein vs. Carbs (5).mp3::AudioStreamMP3::7304346840839169373::1728152840::1728161487::1::::<><>::
-Protein vs. Carbs (7).mp3::AudioStreamMP3::8963716453974601214::1728152840::1728161487::1::::<><>::
-Protein vs. Carbs (8).mp3::AudioStreamMP3::1260998097027322333::1728152840::1728161487::1::::<><>::
-Protein vs. Carbs.mp3::AudioStreamMP3::488558539188860819::1728152840::1728161487::1::::<><>::
-Scrote Jenkins.mp3::AudioStreamMP3::8823722557757923506::1728156977::1728161487::1::::<><>::
-Scrotes vs. Protein.mp3::AudioStreamMP3::621031819290213889::1728152840::1728161487::1::::<><>::
-Scrotus.mp3::AudioStreamMP3::8057995433585313843::1728156977::1728161487::1::::<><>::
-::res://Sound/::1728222009
-HouseNoise.wav::AudioStreamWAV::3450665968565478775::1728221933::1728222009::1::::<><>::
-::res://Structures/::1728145957
-::res://Structures/Walls/::1728228414
-MeatWall.tscn::PackedScene::8843270574233772131::1728228414::0::1::::<><>::res://Scripts/Structures/Structure.gd<>uid://c1vfb2cwi0snu::::res://Art/Map/Walls/bonewalltile.png
-::res://Unit/::1728230477
-Enemy.tscn::PackedScene::445687491135679862::1728230477::0::1::::<><>::res://Scripts/Units/Enemies/enemy.gd<>uid://brxkv2pvc2qhu::::res://Art/Units/Enemies/EnemySpriteFrames.tres<>res://Scripts/Units/Enemies/animated_sprite.gd
-Potato.tscn::PackedScene::4885556375571705219::1728212466::0::1::::<><>::uid://dfvyfhr5dj8f7::::res://Art/Units/Projectiles/potato.png<>res://Scripts/Units/Projectiles/potato.gd
-Scrote.tscn::PackedScene::8502843768961614845::1728230477::0::1::::<><>::res://Scripts/Units/Scrotes/scrote.gd<>uid://cramueyj2h0ec::::res://Art/Units/Scrotes/ScroatJenkins.png<>uid://ce0sw5c5l2s7d::::res://Art/Units/Scrotes/ScroteStranding-Sheet.png
-Turret.tscn::PackedScene::4904117696983421295::1728222581::0::1::::<><>::res://Scripts/Units/Turrets/turret.gd<>uid://cbuunucqe7au2::::res://Unit/Potato.tscn<>uid://c4pict7glk3hc::::res://Art/Units/Turrets/Turret1-Sheet.png<>res://Scripts/Units/Turrets/turret_sprite.gd
-::res://Unit/Spawners/::1728222581
-ScroteHouse.tscn::PackedScene::4353501188013576902::1728222581::0::1::::<><>::res://Scripts/Structures/scrote_house.gd<>uid://42alb52alm52::::res://Art/Units/Spawners/ScroteSpawner-Sheet.png
-SpawningPool.tscn::PackedScene::5672223967524873461::1728222581::0::1::::<><>::uid://cjgxx85frllxe::::res://Art/Units/Spawners/SpawningPool-Sheet.png<>res://Scripts/Units/Enemies/enemyspawner.gd
->>>>>>> main
+::res://Structures/Walls/::1728241057
+MeatWall.tscn::PackedScene::8843270574233772131::1728241057::0::1::::<><>::res://Scripts/Structures/Structure.gd<>uid://c1vfb2cwi0snu::::res://Art/Map/Walls/bonewalltile.png<>uid://cmpiwdiynh1qq::::res://HUD/HealthBar.tscn
+::res://Unit/::1728240799
+Enemy.tscn::PackedScene::445687491135679862::1728240799::0::1::::<><>::res://Scripts/Units/Enemies/enemy.gd<>uid://cooedice4wffq::::res://Art/Units/Enemies/EnemySpriteFrames.tres<>res://Scripts/Units/Enemies/animated_sprite.gd
+Potato.tscn::PackedScene::4885556375571705219::1728240799::0::1::::<><>::uid://dfvyfhr5dj8f7::::res://Art/Units/Projectiles/potato.png<>res://Scripts/Units/Projectiles/potato.gd
+Scrote.tscn::PackedScene::8502843768961614845::1728230865::0::1::::<><>::res://Scripts/Units/Scrotes/scrote.gd<>uid://cramueyj2h0ec::::res://Art/Units/Scrotes/ScroatJenkins.png<>uid://ce0sw5c5l2s7d::::res://Art/Units/Scrotes/ScroteStranding-Sheet.png
+Turret.tscn::PackedScene::4904117696983421295::1728240799::0::1::::<><>::res://Scripts/Units/Turrets/turret.gd<>uid://cbuunucqe7au2::::res://Unit/Potato.tscn<>uid://c4pict7glk3hc::::res://Art/Units/Turrets/Turret1-Sheet.png<>res://Scripts/Units/Turrets/turret_sprite.gd
+::res://Unit/Spawners/::1728240799
+ScroteHouse.tscn::PackedScene::4353501188013576902::1728227501::0::1::::<><>::res://Scripts/Structures/scrote_house.gd<>uid://42alb52alm52::::res://Art/Units/Spawners/ScroteSpawner-Sheet.png
+SpawningPool.tscn::PackedScene::5672223967524873461::1728240799::0::1::::<><>::uid://cjgxx85frllxe::::res://Art/Units/Spawners/SpawningPool-Sheet.png<>res://Scripts/Units/Enemies/enemyspawner.gd

@@ -6,6 +6,7 @@ signal on_death
 var target_position: Vector2 = Vector2.ZERO
 @export var speed: float = 100.0
 @export var health: int = 5
+@export var MAX_HEALTH: int = 5
 @export var target: Node2D = null
 var time_since_reaching_target = 0.0
 var damage_dealt = 0

@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://gl5n4qwltrfa"]
+[gd_scene load_steps=6 format=3 uid="uid://gl5n4qwltrfa"]
 
 [ext_resource type="Script" path="res://Scripts/Units/Enemies/enemy.gd" id="1_l1aak"]
+[ext_resource type="PackedScene" uid="uid://dm08jyntffag0" path="res://HUD/HealthBar.tscn" id="2_8d77b"]
 [ext_resource type="SpriteFrames" uid="uid://cooedice4wffq" path="res://Art/Units/Enemies/EnemySpriteFrames.tres" id="2_smxok"]
 [ext_resource type="Script" path="res://Scripts/Units/Enemies/animated_sprite.gd" id="3_qh4b0"]
 
@@ -11,6 +12,13 @@ size = Vector2(133.333, 106.667)
 collision_layer = 5
 script = ExtResource("1_l1aak")
 metadata/_edit_group_ = true
+
+[node name="HealthBar" parent="." instance=ExtResource("2_8d77b")]
+offset_left = -24.0
+offset_top = -32.0
+offset_right = 76.0
+offset_bottom = -19.0
+scale = Vector2(0.479484, 0.728204)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.3, 0.3)

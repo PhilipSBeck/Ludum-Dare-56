@@ -1,24 +1,28 @@
-extends Node2D  # Or whatever node your object is
+extends ProgressBar  # Or whatever node your object is
 
 var max_health: int = 100
 var health: int = 100
 
 # Reference to the ProgressBar node
-@onready var health_bar = $ProgressBar
+@onready var parent = get_parent()
 
 func _ready():
-	var parent = get_parent()
 	max_health = parent.MAX_HEALTH
 	health = parent.health
 	# Set the initial values for the health bar
-	health_bar.max_value = max_health
-	health_bar.value = health
+	max_value = max_health
+	update_health_bar()  # Ensure the health bar is initialized with correct health
 
 func _process(_delta: float):
+	health = parent.health
+	update_health_bar()  # Ensure the health bar is updated every frame
+
+	# Show or hide health bar based on health levela
+	# Optional: Adjust this based on whether you want to hide it at full health or not
 	if health == max_health:
-		health_bar.visible = false
+		visible = false
 	else:
-		health_bar.visible = true
+		visible = true
 
 func take_damage(amount: int):
 	health -= amount
@@ -36,7 +40,8 @@ func heal(amount: int):
 	update_health_bar()
 
 func update_health_bar():
-	health_bar.value = health
+	# Update the health bar's value
+	value = health
 
 func die():
 	# Handle object death
