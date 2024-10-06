@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=4 uid="uid://cmrxi8qfrseay"]
+[gd_scene load_steps=18 format=4 uid="uid://cmrxi8qfrseay"]
 
 [ext_resource type="Texture2D" uid="uid://bsnnnedb70g0f" path="res://Art/Map/Floor/TileSet.png" id="1_ioi34"]
 [ext_resource type="Script" path="res://Scripts/Core/title_screen.gd" id="1_x8bk8"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://cm2wx2hxyu6m8" path="res://Unit/Spawners/SpawningPool.tscn" id="4_whn0m"]
 [ext_resource type="PackedScene" uid="uid://dte3uhl6ck5hh" path="res://Unit/Scrote.tscn" id="5_8dhs3"]
 [ext_resource type="SpriteFrames" uid="uid://brxkv2pvc2qhu" path="res://Art/Units/Enemies/EnemySpriteFrames.tres" id="6_jnlr0"]
+[ext_resource type="Texture2D" uid="uid://42alb52alm52" path="res://Art/Units/Spawners/ScroteSpawner-Sheet.png" id="7_qv2k1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5n3a6"]
 texture = ExtResource("1_ioi34")
@@ -25,6 +26,56 @@ texture_region_size = Vector2i(128, 128)
 tile_size = Vector2i(128, 128)
 sources/0 = SubResource("TileSetAtlasSource_5n3a6")
 sources/1 = SubResource("TileSetAtlasSource_ots8w")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7uktf"]
+atlas = ExtResource("7_qv2k1")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2w236"]
+atlas = ExtResource("7_qv2k1")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hpuhx"]
+atlas = ExtResource("7_qv2k1")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cmuyp"]
+atlas = ExtResource("7_qv2k1")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ds6v4"]
+atlas = ExtResource("7_qv2k1")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wk38p"]
+atlas = ExtResource("7_qv2k1")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2apdd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7uktf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2w236")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hpuhx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cmuyp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ds6v4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wk38p")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
 
 [node name="TitleScreen" type="Node"]
 script = ExtResource("1_x8bk8")
@@ -59,11 +110,30 @@ animation = &"Enemy1"
 autoplay = "Enemy1"
 
 [node name="Enemy3" type="AnimatedSprite2D" parent="."]
-position = Vector2(982, 236)
+position = Vector2(998, 160)
 scale = Vector2(-0.7, 0.7)
 sprite_frames = ExtResource("6_jnlr0")
 animation = &"Enemy2"
 autoplay = "Enemy2"
+
+[node name="Enemy4" type="AnimatedSprite2D" parent="."]
+position = Vector2(268, 175)
+scale = Vector2(0.49, 0.49)
+sprite_frames = ExtResource("6_jnlr0")
+animation = &"Enemy3"
+autoplay = "Enemy3"
+
+[node name="ScroteSpawner2" type="AnimatedSprite2D" parent="."]
+position = Vector2(640, 553)
+sprite_frames = SubResource("SpriteFrames_2apdd")
+autoplay = "default"
+frame_progress = 0.261528
+
+[node name="ScroteSpawner" type="AnimatedSprite2D" parent="."]
+position = Vector2(998, 372)
+sprite_frames = SubResource("SpriteFrames_2apdd")
+autoplay = "default"
+frame_progress = 0.541461
 
 [connection signal="quit_button_pressed" from="TitleScreen" to="." method="_on_title_screen_quit_button_pressed"]
 [connection signal="start_button_pressed" from="TitleScreen" to="." method="_on_title_screen_start_button_pressed"]
