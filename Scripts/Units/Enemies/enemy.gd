@@ -15,8 +15,10 @@ func _process(delta: float):
 	# Calculate the direction to the mouse position
 	var direction = (target_position - position).normalized()
 
+	var velocity = direction * speed * delta
+
 	# Move towards the target position
-	position += direction * speed * delta
+	position += velocity
 
 	# Check if the enemy is moving to the left (i.e., the x component of direction is negative)
 	if direction.x < 0:

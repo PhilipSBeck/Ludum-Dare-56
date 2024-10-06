@@ -31,6 +31,9 @@ func _process(delta: float) -> void:
 			spawn_enemy(spawner.position)
 		
 func spawn_enemy(pos: Vector2):
+	var main = get_parent()
+	main.total_enemies += 1
+	
 	# Create an instance of the enemy scene
 	var enemy = enemy_scene.instantiate()
 
@@ -49,18 +52,27 @@ func spawn_enemy(pos: Vector2):
 	enemy.on_death.connect(on_death_of_enemy)
 
 func set_target(enemy) -> void:
-	var closest_turret = null
+	var closest_wall = null
 	var closest = 99999999
-
-	for turret in get_parent().get_node("Turrets").get_children():
-		if turret is Node2D:
-			var dist = abs(turret.position.x - position.x) + abs(turret.position.y - position.y)
-			if dist < closest:
-				closest = dist
-				closest_turret = turret
 	
-	if closest_turret:
-		enemy.target_position = Vector2(closest_turret.position.x, closest_turret.position.y)
+	var main = get_parent()
+	var walls = []
+	
+	for key in main.building_dictionary:
+		if main.building_dictionary[key].building_type != "MeatWall":
+			continue
+		walls.append(key)
+		
+	var local_pos = main.get_node("TileMapLayer").local_to_map(enemy.position)
+	
+	for wall in walls:
+		var manhattan = abs(wall.x - local_pos.x) + abs(wall.y - local_pos.y)
+		if manhattan < closest:
+			closest = manhattan
+			closest_wall = main.building_dictionary[wall]
+			
+	if closest_wall:
+		enemy.target_position = closest_wall.position
 
 func get_random_edge_position() -> Vector2:
 	# Choose a random edge: 0 = top, 1 = right, 2 = bottom, 3 = left
@@ -84,4 +96,5 @@ func get_random_edge_position() -> Vector2:
 	return position
 	
 func on_death_of_enemy() -> void:
+	get_parent().total_enemies -= 1
 	increase_resources.emit()

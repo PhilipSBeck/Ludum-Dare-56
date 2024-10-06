@@ -1,11 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://dx80my0br2ctn"]
+[gd_scene load_steps=4 format=3 uid="uid://dx80my0br2ctn"]
 
 [ext_resource type="Script" path="res://Scripts/Structures/Structure.gd" id="1_3qgo1"]
 [ext_resource type="Texture2D" uid="uid://c1vfb2cwi0snu" path="res://Art/Map/Walls/bonewalltile.png" id="1_qlrt3"]
 
-[node name="MeatWall" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5wxpc"]
+size = Vector2(130, 130)
+
+[node name="MeatWall" type="Area2D"]
+collision_layer = 2
+collision_mask = 4
 script = ExtResource("1_3qgo1")
 building_type = "MeatWall"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_qlrt3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 63)
+shape = SubResource("RectangleShape2D_5wxpc")
