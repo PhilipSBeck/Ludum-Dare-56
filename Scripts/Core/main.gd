@@ -69,6 +69,10 @@ func attempt_place_fortress():
 	$MainHud.increase_meat(-WALL_PRICE_MEAT)
 	$MainHud.increase_skin(-WALL_PRICE_SKIN)
 	
+	var fortress_min = (Vector2(mapPos)*128.0)-(Vector2(2.5,2.5)*128.0)
+	var fortress_max = (Vector2(mapPos)*128.0)+(Vector2(2.5,2.5)*128.0)
+	delete_spawner_here(Rect2(fortress_min, fortress_max))
+	
 	mapPos = get_fortress_corner_from_map_pos(mapPos)
 	for i in 5:
 		for j in 5:
@@ -82,6 +86,7 @@ func attempt_place_fortress():
 					add_child(wall)
 	check_wall_adjecency()
 	set_placing_tiles(false)
+	
 
 func attempt_place_turret():
 	var mousePos = $TileMapLayer.get_global_mouse_position()
@@ -154,3 +159,17 @@ func _on_enemies_increase_resources() -> void:
 	$MainHud.increase_bones(BONES_GAINED)
 	$MainHud.increase_meat(MEAT_GAINED)
 	$MainHud.increase_skin(SKIN_GAINED)
+	
+func delete_spawner_here(bounds: Rect2) -> void:
+	var spawners = $Spawners.get_children()
+	for spawner in spawners:
+		var spawner_col_shape: CollisionShape2D = spawner.get_node("CollisionShape2D")
+		var spawner_scale = spawner_col_shape.scale/2
+		var spawner_bounds_min = spawner.position - spawner_scale
+		var spawner_bounds_max = spawner.position + spawner_scale
+		
+		var spawner_bounds = Rect2(spawner_bounds_min, spawner_bounds_max)
+		
+		if bounds.intersects(spawner_bounds):
+			spawner.queue_free()
+	
