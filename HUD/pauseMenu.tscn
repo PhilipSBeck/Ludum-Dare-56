@@ -75,5 +75,28 @@ theme_override_fonts/font = ExtResource("1_y0vyw")
 theme_override_font_sizes/font_size = 25
 text = "Main Menu"
 
+[node name="HSlider" type="HSlider" parent="Buttons"]
+layout_mode = 0
+offset_left = -3.0
+offset_top = 149.0
+offset_right = 197.0
+offset_bottom = 165.0
+max_value = 1.0
+step = 0.01
+value = 1.0
+
+[node name="Volume Tag" type="Label" parent="Buttons"]
+layout_mode = 0
+offset_left = -21.0
+offset_top = 108.0
+offset_right = 215.0
+offset_bottom = 139.0
+theme_override_fonts/font = ExtResource("1_y0vyw")
+theme_override_font_sizes/font_size = 25
+text = "Master Volume"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [connection signal="pressed" from="Buttons/Start Button" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="Buttons/Quit To Main" to="." method="_on_quit_button_pressed"]
+[connection signal="value_changed" from="Buttons/HSlider" to="." method="_on_h_slider_value_changed"]

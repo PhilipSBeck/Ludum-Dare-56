@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://gl5n4qwltrfa"]
 
 [ext_resource type="Script" path="res://Scripts/Units/Enemies/enemy.gd" id="1_l1aak"]
-[ext_resource type="SpriteFrames" uid="uid://dex6xkn4etnf1" path="res://Art/Units/Enemies/EnemySpriteFrames.tres" id="2_smxok"]
+[ext_resource type="SpriteFrames" uid="uid://brxkv2pvc2qhu" path="res://Art/Units/Enemies/EnemySpriteFrames.tres" id="2_smxok"]
 [ext_resource type="Script" path="res://Scripts/Units/Enemies/animated_sprite.gd" id="3_qh4b0"]
 [ext_resource type="AudioStream" uid="uid://c6qepgl7p5iru" path="res://Sound/HitWall.wav" id="4_mpfb8"]
 
@@ -26,3 +26,4 @@ shape = SubResource("RectangleShape2D_l3kj4")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_mpfb8")
+volume_db = -12.0
