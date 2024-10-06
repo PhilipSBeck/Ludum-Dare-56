@@ -21,7 +21,6 @@ func _process(delta: float):
 	# rotation = direction.angle()
 	
 	# Optional: Remove the potato if it reaches its target
-	print(global_position.distance_to(last_pos))
 	if global_position.distance_to(last_pos) < 10:
 		if target and is_instance_valid(target):
 			target.health -= damage

@@ -9,6 +9,7 @@ var target_position: Vector2 = Vector2.ZERO
 
 func _process(delta: float):
 	if health <= 0:
+		on_death.emit()
 		queue_free()
 	
 	# Calculate the direction to the mouse position
