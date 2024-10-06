@@ -1,7 +1,7 @@
 # Carbs vs. Protein - A Scrote Jenkins Story
 
 **Genre**: Tower Defense, Survival  
-**Platform**: PC (itch.io)
+**Platform**: PC, MacOS (itch.io)
 
 ## Overview
 **Carbs vs. Protein - A Scrote Jenkins Story** is a survival tower defense game where you defend your meat castle against waves of enemies. You strategically place castle tiles, turrets, and deploy scrotes to repair walls as you gather resources by defeating enemies. The aim is simple: survive for as long as possible while managing your resources, fending off enemies, and repairing your castle walls before they fall and you lose the game.
