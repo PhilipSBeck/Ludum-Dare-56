@@ -169,7 +169,7 @@ visible = false
 layout_mode = 0
 offset_right = 96.0
 offset_bottom = 96.0
-texture = ExtResource("9_kpy8x")
+texture = ExtResource("7_3oheq")
 
 [node name="SelectedIcon" type="Label" parent="Hotbar"]
 layout_mode = 1

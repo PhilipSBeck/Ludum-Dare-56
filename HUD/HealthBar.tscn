@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dm08jyntffag0"]
+
+[ext_resource type="Script" path="res://Scripts/HUD/health_bar.gd" id="1_hlioi"]
+
+[node name="HealthBar" type="ProgressBar"]
+modulate = Color(0, 1, 0, 1)
+offset_right = 100.0
+offset_bottom = 13.0
+theme_override_font_sizes/font_size = 6
+show_percentage = false
+script = ExtResource("1_hlioi")

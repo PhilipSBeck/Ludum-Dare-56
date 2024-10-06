@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://hno1joyt0coj"]
+[gd_scene load_steps=8 format=3 uid="uid://bsu0be3mm65n0"]
 
 [ext_resource type="Script" path="res://Scripts/HUD/death_screen.gd" id="1_5q8l3"]
 [ext_resource type="Shader" path="res://Shaders/blur.gdshader" id="1_ijyf8"]
