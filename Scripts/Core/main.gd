@@ -119,6 +119,7 @@ func attempt_place_building(building_resource: Resource, bone_price: float, skin
 		$Turrets.add_child(building)
 	else:
 		add_child(building)
+		$Camera2D/HouseNoise.play()
 		
 	building_dictionary[building.position] = building
 
