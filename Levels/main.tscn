@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://d4hjcmvwxni5t"]
+[gd_scene load_steps=12 format=3 uid="uid://d4hjcmvwxni5t"]
 
 [ext_resource type="PackedScene" uid="uid://dv8ga14jrgtfb" path="res://Gameplay/Map/WorldMap.tscn" id="1_dsvs6"]
 [ext_resource type="Script" path="res://Scripts/Core/camera_2d.gd" id="1_qvoxn"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://v74l8i6gpmfc" path="res://HUD/mainHUD.tscn" id="7_j582s"]
 [ext_resource type="Script" path="res://Scripts/Units/Enemies/enemies.gd" id="7_nfqvv"]
 [ext_resource type="PackedScene" uid="uid://gl5n4qwltrfa" path="res://Unit/Enemy.tscn" id="8_yb52r"]
+[ext_resource type="PackedScene" uid="uid://6vty7eyxcx7o" path="res://HUD/MusicPlayerWidget.tscn" id="11_xewl6"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_vq540")
@@ -42,6 +43,22 @@ enemy_scene = ExtResource("8_yb52r")
 [node name="Spawners" type="Node2D" parent="."]
 
 [node name="Scrotes" type="Node2D" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+process_mode = 3
+
+[node name="MusicPlayerWidget" parent="CanvasLayer" instance=ExtResource("11_xewl6")]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -338.0
+offset_top = -109.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 0
+grow_vertical = 0
 
 [connection signal="houseSelected" from="MainHud" to="." method="_on_main_hud_house_selected"]
 [connection signal="towerSelected" from="MainHud" to="." method="_on_main_hud_tower_selected"]
