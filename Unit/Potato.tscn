@@ -1,11 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://cbuunucqe7au2"]
+[gd_scene load_steps=4 format=3 uid="uid://cbuunucqe7au2"]
 
 [ext_resource type="Texture2D" uid="uid://dfvyfhr5dj8f7" path="res://Art/Units/Projectiles/potato.png" id="1_acygx"]
 [ext_resource type="Script" path="res://Scripts/Units/Projectiles/potato.gd" id="2_fv1r4"]
 
-[node name="Potato" type="Node2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_qowx8"]
+radius = 3.0
+
+[node name="Potato" type="Area2D"]
+collision_layer = 2
+monitorable = false
 script = ExtResource("2_fv1r4")
 
 [node name="PotatoSprite" type="Sprite2D" parent="."]
-scale = Vector2(0.1, 0.1)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_acygx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_qowx8")

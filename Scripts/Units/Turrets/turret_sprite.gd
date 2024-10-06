@@ -4,9 +4,10 @@ func _ready() -> void:
 	$".".play("default")
 
 func _process(delta):
-	var enemy_pos = get_parent().get_target()
+	var enemy_pos = get_parent().target
 	
-	var direction = enemy_pos - global_position
-	var angle_to_mouse = direction.angle() + PI / 2
+	if enemy_pos:
+		var direction = enemy_pos.position - global_position
+		var angle = direction.angle() + PI / 2
 
-	rotation = angle_to_mouse
+		rotation = angle
