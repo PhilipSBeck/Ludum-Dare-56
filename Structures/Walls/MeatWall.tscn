@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/Structures/Structure.gd" id="1_3qgo1"]
 [ext_resource type="Texture2D" uid="uid://c1vfb2cwi0snu" path="res://Art/Map/Walls/bonewalltile.png" id="1_qlrt3"]
-[ext_resource type="PackedScene" uid="uid://dm08jyntffag0" path="res://HUD/HealthBar.tscn" id="3_cd23g"]
+[ext_resource type="PackedScene" path="res://HUD/HealthBar.tscn" id="3_cd23g"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5wxpc"]
 size = Vector2(130, 130)
