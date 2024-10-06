@@ -11,6 +11,9 @@ func _process(delta: float) -> void:
 	
 func can_spawn() -> bool:
 	var can_spawn_en: bool = spawnRate <= timeSinceLastSpawn
+	var main = get_parent().get_parent()
+	can_spawn_en = can_spawn_en and main.total_enemies < main.MAX_ENEMIES
+	can_spawn_en = can_spawn_en and main.wall_placed
 	
 	if can_spawn_en:
 		timeSinceLastSpawn = 0.0

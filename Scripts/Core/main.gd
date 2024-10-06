@@ -2,6 +2,7 @@ extends Node
 
 var placing_tiles = false
 var placing_turrets = false
+@export var wall_placed = false
 
 const WALL_PRICE_BONE = 30
 const WALL_PRICE_MEAT = 50
@@ -18,6 +19,9 @@ const TURRET = preload("res://Unit/Turret.tscn")
 const SKIN_GAINED = 10
 const BONES_GAINED = 10
 const MEAT_GAINED = 10
+
+const MAX_ENEMIES = 200
+@export var total_enemies = 0
 
 
 var building_dictionary = {}
@@ -65,6 +69,9 @@ func attempt_place_fortress():
 		return
 	if $MainHud.skin < WALL_PRICE_SKIN:
 		return
+		
+	wall_placed = true
+		
 	$MainHud.increase_bones(-WALL_PRICE_BONE)
 	$MainHud.increase_meat(-WALL_PRICE_MEAT)
 	$MainHud.increase_skin(-WALL_PRICE_SKIN)
