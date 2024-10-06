@@ -17,6 +17,7 @@ func _process(delta: float) -> void:
 		if death_screen and !game_over:
 			get_node("/root/Main").game_over = true
 			get_tree().change_scene_to_packed(death_screen)
+			get_node("/root/Main/MainHud").queue_free()
 		else:
 			print("OH NOOOOO")
 		
