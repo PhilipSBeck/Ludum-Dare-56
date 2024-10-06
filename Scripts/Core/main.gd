@@ -83,8 +83,9 @@ func attempt_place_fortress():
 	check_wall_adjecency()
 	set_placing_tiles(false)
 	
-	var fortress_min = (Vector2(mapPos)*128.0)
-	var fortress_max = (Vector2(mapPos)*128.0)+(Vector2(5,5)*128.0)
+	
+	var fortress_min = Vector2(mapPos)+Vector2(50.0, 50.0)
+	var fortress_max = Vector2(mapPos)+Vector2(5,5)+Vector2(50.0, 50.0)
 	delete_spawner_here(Rect2(fortress_min, fortress_max))
 	
 	
@@ -166,11 +167,26 @@ func delete_spawner_here(bounds: Rect2) -> void:
 	for spawner in spawners:
 		var spawner_col_shape: CollisionShape2D = spawner.get_node("CollisionShape2D")
 		var spawner_scale = spawner_col_shape.scale*0.5
-		var spawner_bounds_min = spawner.position #- spawner_scale
-		var spawner_bounds_max = spawner.position #+ spawner_scale
+		var spawner_bounds_min = (spawner.position/128.0)-Vector2(2, 1)+Vector2(50.0, 50.0)
+		var spawner_bounds_max = (spawner.position/128.0)+Vector2(2, 1)+Vector2(50.0, 50.0)
 		
 		var spawner_bounds = Rect2(spawner_bounds_min, spawner_bounds_max)
 		
-		if bounds.intersects(spawner_bounds):
+		if rects_overlap(spawner_bounds, bounds):
+		#if spawner_bounds.intersects(bounds):
 			spawner.queue_free()
+			
+func rects_overlap(a: Rect2, b: Rect2) -> bool:
+	if(a.position.x > b.size.x
+		or b.position.x > a.size.x
+		or a.position.y > b.size.y
+		or b.position.y > a.size.y):
+			return false
+	
+	return true
+		
+	
+	
+	
+
 	
