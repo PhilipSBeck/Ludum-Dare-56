@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmpiwdiynh1qq"]
+
+[ext_resource type="Script" path="res://Scripts/HUD/health_bar.gd" id="1_hlioi"]
+
+[node name="HealthBar" type="Node2D"]
+script = ExtResource("1_hlioi")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_right = 4.0
+offset_bottom = 27.0
+show_percentage = false
