@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://cm2wx2hxyu6m8"]
+[gd_scene load_steps=10 format=3 uid="uid://cm2wx2hxyu6m8"]
 
 [ext_resource type="Texture2D" uid="uid://cjgxx85frllxe" path="res://Art/Units/Spawners/SpawningPool-Sheet.png" id="1_b48v8"]
+[ext_resource type="Script" path="res://Scripts/Units/Enemies/enemyspawner.gd" id="1_nytly"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_o6j0b"]
 atlas = ExtResource("1_b48v8")
@@ -49,6 +50,7 @@ animations = [{
 
 [node name="SpawningPool" type="Area2D"]
 scale = Vector2(0.977907, 0.991403)
+script = ExtResource("1_nytly")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_y6ryw")

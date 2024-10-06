@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://d4hjcmvwxni5t"]
+[gd_scene load_steps=11 format=3 uid="uid://d4hjcmvwxni5t"]
 
 [ext_resource type="PackedScene" uid="uid://dv8ga14jrgtfb" path="res://Gameplay/Map/WorldMap.tscn" id="1_dsvs6"]
 [ext_resource type="Script" path="res://Scripts/Core/camera_2d.gd" id="1_qvoxn"]
 [ext_resource type="Script" path="res://Scripts/Core/main.gd" id="1_vq540"]
 [ext_resource type="PackedScene" uid="uid://cb4udp41rudyd" path="res://Unit/Turret.tscn" id="3_i0156"]
+[ext_resource type="PackedScene" uid="uid://cm2wx2hxyu6m8" path="res://Unit/Spawners/SpawningPool.tscn" id="3_ph7pe"]
 [ext_resource type="Texture2D" uid="uid://bay8ourwndfe8" path="res://Art/Map/Floor/TileHighlight.png" id="3_vuw60"]
 [ext_resource type="PackedScene" uid="uid://bgghx27ni246q" path="res://HUD/pauseMenu.tscn" id="7_j0glq"]
 [ext_resource type="PackedScene" uid="uid://v74l8i6gpmfc" path="res://HUD/mainHUD.tscn" id="7_j582s"]
@@ -14,6 +15,7 @@
 script = ExtResource("1_vq540")
 
 [node name="TileMapLayer" parent="." instance=ExtResource("1_dsvs6")]
+spawner_scene = ExtResource("3_ph7pe")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(577, 326)
@@ -34,6 +36,8 @@ script = ExtResource("7_nfqvv")
 enemy_scene = ExtResource("8_yb52r")
 
 [node name="PauseMenu" parent="." instance=ExtResource("7_j0glq")]
+
+[node name="Spawners" type="Node2D" parent="."]
 
 [connection signal="towerSelected" from="MainHud" to="." method="_on_main_hud_tower_selected"]
 [connection signal="turretSelected" from="MainHud" to="." method="_on_main_hud_turret_selected"]
