@@ -32,6 +32,7 @@ func _process(delta: float):
 			if time_since_reaching_target - damage_dealt >= 1.0:
 				damage_dealt += 1
 				target.health -= 1
+				$AudioStreamPlayer2D.play()
 		
 		return
 	
