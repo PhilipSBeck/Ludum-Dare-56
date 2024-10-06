@@ -25,6 +25,25 @@ theme_override_font_sizes/font_size = 50
 text = "CARBS VS PROTEIN"
 horizontal_alignment = 1
 
+[node name="Subtitle" type="Label" parent="Title"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -256.0
+offset_top = 60.0
+offset_right = 256.0
+offset_bottom = 100.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.694508, 0.886431, 0.912578, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 18
+theme_override_fonts/font = ExtResource("1_um3ig")
+theme_override_font_sizes/font_size = 32
+text = "A SCROTE JENKINS STORY"
+horizontal_alignment = 1
+
 [node name="Buttons" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 8
