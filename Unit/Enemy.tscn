@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://gl5n4qwltrfa"]
+[gd_scene load_steps=11 format=3 uid="uid://gl5n4qwltrfa"]
 
 [ext_resource type="Script" path="res://Scripts/Units/Enemies/enemy.gd" id="1_l1aak"]
 [ext_resource type="Texture2D" uid="uid://c4okcpbsryxyl" path="res://Art/Units/Enemies/Enemy1SpriteSheet-Sheet.png" id="1_rlqyn"]
+[ext_resource type="Texture2D" uid="uid://vf82l3i27d3u" path="res://Art/Units/Enemies/Enemy2-Sheet.png" id="3_masem"]
 [ext_resource type="Script" path="res://Scripts/Units/Enemies/animated_sprite.gd" id="3_qh4b0"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_krk1y"]
@@ -10,6 +11,14 @@ region = Rect2(0, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lhv0a"]
 atlas = ExtResource("1_rlqyn")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cypte"]
+atlas = ExtResource("3_masem")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4hxhy"]
+atlas = ExtResource("3_masem")
 region = Rect2(128, 0, 128, 128)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fpjwx"]
@@ -22,8 +31,19 @@ animations = [{
 "texture": SubResource("AtlasTexture_lhv0a")
 }],
 "loop": true,
-"name": &"walk",
+"name": &"Enemy1",
 "speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cypte")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4hxhy")
+}],
+"loop": true,
+"name": &"Enemy2",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l3kj4"]
@@ -37,8 +57,7 @@ metadata/_edit_group_ = true
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_fpjwx")
-animation = &"walk"
-frame_progress = 0.273819
+animation = &"Enemy2"
 script = ExtResource("3_qh4b0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
