@@ -1,7 +1,24 @@
-[gd_scene load_steps=11 format=3 uid="uid://dte3uhl6ck5hh"]
+[gd_scene load_steps=16 format=3 uid="uid://dte3uhl6ck5hh"]
 
 [ext_resource type="Script" path="res://Scripts/Units/Scrotes/scrote.gd" id="1_t8ems"]
 [ext_resource type="Texture2D" uid="uid://cramueyj2h0ec" path="res://Art/Units/Scrotes/ScroatJenkins.png" id="1_ws1o1"]
+[ext_resource type="Texture2D" uid="uid://ce0sw5c5l2s7d" path="res://Art/Units/Scrotes/ScroteStranding-Sheet.png" id="2_bnwud"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u0c8s"]
+atlas = ExtResource("2_bnwud")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6iafj"]
+atlas = ExtResource("2_bnwud")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gnrlf"]
+atlas = ExtResource("2_bnwud")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ndo1e"]
+atlas = ExtResource("2_bnwud")
+region = Rect2(384, 0, 128, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eaelt"]
 atlas = ExtResource("1_ws1o1")
@@ -29,6 +46,23 @@ region = Rect2(640, 0, 128, 128)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_xuvwg"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u0c8s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6iafj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gnrlf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ndo1e")
+}],
+"loop": true,
+"name": &"stand",
+"speed": 6.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_eaelt")
@@ -62,9 +96,9 @@ script = ExtResource("1_t8ems")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_xuvwg")
-animation = &"walk"
+animation = &"stand"
 autoplay = "walk"
-frame_progress = 0.116029
+frame_progress = 0.124135
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-9, 5.5)

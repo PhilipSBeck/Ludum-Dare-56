@@ -1,0 +1,45 @@
+[gd_resource type="SpriteFrames" load_steps=7 format=3 uid="uid://brxkv2pvc2qhu"]
+
+[ext_resource type="Texture2D" uid="uid://c4okcpbsryxyl" path="res://Art/Units/Enemies/Enemy1SpriteSheet-Sheet.png" id="1_qgeih"]
+[ext_resource type="Texture2D" uid="uid://vf82l3i27d3u" path="res://Art/Units/Enemies/Enemy2-Sheet.png" id="2_lev0v"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_krk1y"]
+atlas = ExtResource("1_qgeih")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lhv0a"]
+atlas = ExtResource("1_qgeih")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cypte"]
+atlas = ExtResource("2_lev0v")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4hxhy"]
+atlas = ExtResource("2_lev0v")
+region = Rect2(128, 0, 128, 128)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_krk1y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lhv0a")
+}],
+"loop": true,
+"name": &"Enemy1",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cypte")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4hxhy")
+}],
+"loop": true,
+"name": &"Enemy2",
+"speed": 5.0
+}]
