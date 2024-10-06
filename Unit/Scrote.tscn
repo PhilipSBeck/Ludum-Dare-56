@@ -87,10 +87,11 @@ animations = [{
 "speed": 6.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_00y58"]
-size = Vector2(102, 119)
+[sub_resource type="CircleShape2D" id="CircleShape2D_xifym"]
 
 [node name="Scrote" type="RigidBody2D"]
+collision_layer = 7
+collision_mask = 3
 gravity_scale = 0.0
 script = ExtResource("1_t8ems")
 
@@ -101,5 +102,15 @@ autoplay = "walk"
 frame_progress = 0.124135
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-9, 5.5)
-shape = SubResource("RectangleShape2D_00y58")
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_xifym")
+
+[node name="WaitTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="RepathTimer" type="Timer" parent="."]
+wait_time = 10.0
+one_shot = true
+
+[connection signal="timeout" from="WaitTimer" to="." method="_on_wait_timer_timeout"]
+[connection signal="timeout" from="RepathTimer" to="." method="_on_repath_timer_timeout"]

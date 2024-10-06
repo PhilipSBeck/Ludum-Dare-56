@@ -185,6 +185,9 @@ func _on_main_hud_house_selected() -> void:
 	placing_houses = true
 
 func _on_enemies_increase_resources() -> void:
+	if !$MainHud:
+		return
+	
 	$MainHud.increase_bones(BONES_GAINED)
 	$MainHud.increase_meat(MEAT_GAINED)
 	$MainHud.increase_skin(SKIN_GAINED)

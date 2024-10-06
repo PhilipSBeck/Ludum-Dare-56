@@ -30,6 +30,7 @@ func shoot_potato():
 	
 	var direction = (target.position - position).normalized()
 	potato.target = target
+	$AudioStreamPlayer2D.play()
 	
 func get_target() -> Node2D:
 	var closest_enemy = null

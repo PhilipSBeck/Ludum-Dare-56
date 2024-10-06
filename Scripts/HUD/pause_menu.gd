@@ -24,3 +24,8 @@ func _on_quit_button_pressed() -> void:
 	visible = false
 	quit_to_main.emit()
 	get_tree().change_scene_to_file("res://Levels/TitleScreen.tscn")
+
+
+func _on_h_slider_value_changed(value: float) -> void:
+	var effect = AudioServer.get_bus_effect(0,0)
+	effect.set_volume_db(linear_to_db(value))

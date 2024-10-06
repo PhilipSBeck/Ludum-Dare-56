@@ -7,9 +7,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5wxpc"]
 size = Vector2(130, 130)
 
-[node name="MeatWall" type="Area2D"]
+[node name="MeatWall" type="StaticBody2D"]
 collision_layer = 2
-collision_mask = 4
+collision_mask = 7
 script = ExtResource("1_3qgo1")
 building_type = "MeatWall"
 
@@ -25,3 +25,4 @@ texture = ExtResource("1_qlrt3")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 64)
 shape = SubResource("RectangleShape2D_5wxpc")
+one_way_collision_margin = 19.5

@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://7tv84aj5tbti" path="res://HUD/TitleScreenHud.tscn" id="2_wppsg"]
 [ext_resource type="PackedScene" uid="uid://cm2wx2hxyu6m8" path="res://Unit/Spawners/SpawningPool.tscn" id="4_whn0m"]
 [ext_resource type="PackedScene" uid="uid://dte3uhl6ck5hh" path="res://Unit/Scrote.tscn" id="5_8dhs3"]
-[ext_resource type="SpriteFrames" uid="uid://cooedice4wffq" path="res://Art/Units/Enemies/EnemySpriteFrames.tres" id="6_jnlr0"]
+[ext_resource type="SpriteFrames" uid="uid://brxkv2pvc2qhu" path="res://Art/Units/Enemies/EnemySpriteFrames.tres" id="6_jnlr0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5n3a6"]
 texture = ExtResource("1_ioi34")
@@ -41,6 +41,7 @@ script = null
 
 [node name="Scrote" parent="." instance=ExtResource("5_8dhs3")]
 position = Vector2(805, 437)
+script = null
 
 [node name="Enemy" type="AnimatedSprite2D" parent="."]
 position = Vector2(189, 503)

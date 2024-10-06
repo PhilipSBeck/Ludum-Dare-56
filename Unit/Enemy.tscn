@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dm08jyntffag0" path="res://HUD/HealthBar.tscn" id="2_8d77b"]
 [ext_resource type="SpriteFrames" uid="uid://cooedice4wffq" path="res://Art/Units/Enemies/EnemySpriteFrames.tres" id="2_smxok"]
 [ext_resource type="Script" path="res://Scripts/Units/Enemies/animated_sprite.gd" id="3_qh4b0"]
+[ext_resource type="AudioStream" uid="uid://c6qepgl7p5iru" path="res://Sound/HitWall.wav" id="4_mpfb8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l3kj4"]
 size = Vector2(133.333, 106.667)
@@ -30,3 +31,7 @@ script = ExtResource("3_qh4b0")
 position = Vector2(1.78814e-07, 7)
 scale = Vector2(0.293643, 0.234672)
 shape = SubResource("RectangleShape2D_l3kj4")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_mpfb8")
+volume_db = -12.0
