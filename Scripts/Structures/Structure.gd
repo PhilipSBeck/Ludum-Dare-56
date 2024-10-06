@@ -1,7 +1,7 @@
 extends StaticBody2D
 
 @export var building_type = "Structure Name"
-@export var health = 0
+@export var health = 100
 const MAX_HEALTH = 100
 
 # Called when the node enters the scene tree for the first time.
