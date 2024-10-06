@@ -29,6 +29,7 @@ const MEAT_GAINED = 10
 const MAX_ENEMIES = 200
 @export var total_enemies = 0
 
+@export var game_over = false
 
 var building_dictionary = {}
 
